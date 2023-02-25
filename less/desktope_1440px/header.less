@@ -1,0 +1,202 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px 0px 24px;
+    position: relative;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 8;
+    -webkit-box-shadow: 0px 2px 8px -2px rgba(34, 60, 80, 0.08);
+    -moz-box-shadow: 0px 2px 8px -2px rgba(34, 60, 80, 0.08);
+    box-shadow: 0px 2px 8px -2px rgba(34, 60, 80, 0.08);
+}
+.left__conteiner__header {
+    display: flex;
+    align-items: center;
+}
+.header__navigation__conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 596px;
+    padding: 0px;
+    z-index: 5;
+    transition: all 1.5s ease-in-out;
+    .title {
+        display: none;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 24px 0px 24px 0px;
+    }
+}
+.header__navigation__conteiner-active {
+    top: 0px;
+    transition: all 1.5s ease-in-out;
+}
+.header__lang {
+    display: none;
+    a {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6F767E;
+    }
+    img {
+        margin-right: 8px;
+    }
+}
+.header__lang-active {
+    a {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+.header__link__logo {
+    padding-right: 24px;
+    border-right: 1px solid #D9D9D9;
+}
+.header_navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 592px;
+    padding: 0px;
+    margin-left: 4px;
+    justify-content: space-between;
+    border: none;
+    .nav__item {
+        padding: 32px 20px 32px 20px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6F767E;
+        margin-bottom: 0px;
+        border-bottom: 2px solid transparent;
+    }
+    .nav__item:hover {
+        color: #3E8BF3;
+        border-bottom: 2px solid #3E8BF3;
+    }
+}
+.right__conteiner__header {
+    display: flex;
+    align-items: center;
+}
+.header__button {
+    margin-right: 0px;
+    .btn {
+        min-width: 121px;
+        height: 48px;
+        background: #3E8BF3;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn:hover {
+        background: #3474CA;
+    }
+    .btn:active {
+        background: #295DA2;
+    }
+}
+.header__gamburger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    .gamburger__line {
+        width: 24px;
+        height: 2px;
+        border-radius: 2px;
+        background: #000000;
+        position: absolute;
+        top: 16px;
+        transition: all 1s ease-in-out;
+    }
+    .gamburger__line::after {
+        content: "";
+        position: absolute;
+        top: -8px;
+        width: 24px;
+        height: 2px;
+        border-radius: 2px;
+        background: #000000;
+        transition: all 1s ease-in-out;
+    }
+    .gamburger__line::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 24px;
+        height: 2px;
+        border-radius: 2px;
+        background: #000000;
+        transition: all 1s ease-in-out;
+    }
+}
+.header__gamburger-active {
+    .gamburger__line {
+        rotate: 45deg;
+        transition: all 1s ease-in-out;
+    }
+    .gamburger__line::after {
+        background-color: transparent;
+        transition: all 1s ease-in-out;
+    }
+    .gamburger__line::before {
+        top: 0px;
+        rotate: 90deg;
+        transition: all 1s ease-in-out;
+    }
+}
+.lang__conteiner {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    cursor: pointer;
+    .country__img {
+        margin-right: 8px;
+    }
+    .country__list {
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+.blur>*:not(.header__conteiner, .header__gamburger) {
+    background-color: #00000080;
+    opacity: 0.8;
+    transition: all 2s ease-in-out;
+}

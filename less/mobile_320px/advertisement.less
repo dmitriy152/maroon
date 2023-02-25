@@ -1,0 +1,117 @@
+.advertisement {
+    padding: 0px 0px 0px 0px;
+    background-color: white;
+}
+.advertisement__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F9FE;
+    padding: 32px 16px 0px 16px;
+    .left__conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+        .title {
+            font-family: 'TT Firs Neue';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: #000000;
+            margin: 0px 0px 16px 0px;
+        }
+        .description {
+            font-family: 'TT Firs Neue';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #6F767E;
+            margin: 0px 0px 16px 0px;
+        }
+        .advertisement__launch {
+            width: 137px;
+            height: 48px;
+            background: #3E8BF3;
+            border-radius: 8px;
+            text-align: center;
+            font-family: 'TT Firs Neue';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .advertisement__launch:hover {
+            background: #3474CA;
+        }
+        .advertisement__launch:active {
+            background: #295DA2;
+        }
+    }
+    .right__conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 333px;
+        .img__wrapper {
+            position: relative;
+            width: 282px;
+            height: 333px;
+        }
+        .advertisement__phone {
+            width: 170px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+        }
+        .usd__icon__advertisement {
+            width: 90px;
+            height: 84px;
+            position: absolute;
+            top: 111px;
+            left: -6px;
+            z-index: 6;
+        }
+        .ethereum__icon__advertisement {
+            width: 51px;
+            height: 55px;
+            position: absolute;
+            top: 0px;
+            right: 24px;
+            z-index: 4;
+        }
+        .bsd__icon__advertisement {
+            width: 39px;
+            height: 40px;
+            position: absolute;
+            right: 4px;
+            bottom: 48px;
+            z-index: 5;
+        }
+        .blue__arrow {
+            width: 34px;
+            height: 149px;
+            position: absolute;
+            right: 0px;
+            bottom: 52px;
+            z-index: 3;
+        }
+        .green__arrow {
+            width: 32px;
+            height: 136px;
+            position: absolute;
+            left: 0px;
+            bottom: 60px;
+            z-index: 3;
+        }
+    }
+}
