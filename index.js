@@ -32,3 +32,27 @@ closeCatalogModal.addEventListener("click", function(){
 window.addEventListener("scroll", () => {
     document.body.style.cssText = `--scrollTop: ${this.scrollY}px`
 })
+
+let overlay = document.querySelector(".overlay")
+let modalConsultation = document.querySelector(".modal__window__consultation")
+let sendConsultationModal = document.querySelector(".consultation__send")
+let closeConsultationModal = document.querySelector(".close__consultation__modal")
+let openConsultation = document.querySelectorAll(".open__consultation")
+let consultationInputName = document.querySelector(".input__name")
+let consultationInputPhone = document.querySelector(".input__tel")
+for(let i = 0; i < openConsultation.length; i++){
+    openConsultation[i].addEventListener("click", function(){
+        overlay.classList.add("overlay-active")
+        modalConsultation.classList.add("modal__window__consultation-active")
+    })
+}
+
+closeConsultationWindow = function (){
+    overlay.classList.remove("overlay-active")
+    modalConsultation.classList.remove("modal__window__consultation-active")
+    consultationInputName.value = ""
+    consultationInputPhone.value = ""
+}
+sendConsultationModal.addEventListener("click", closeConsultationWindow)
+closeConsultationModal.addEventListener("click", closeConsultationWindow)
+overlay.addEventListener("click", closeConsultationWindow)

@@ -65,7 +65,7 @@
                         </li>
                     </ul>
                 </div>
-                <bitton class="menu__call">заказать звонок</button>
+                <bitton class="menu__call open__consultation">заказать звонок</button>
             </div>
         </section>
     </header>
@@ -80,7 +80,7 @@
                     <li class="slogan__item">Приумножай</li>
                 </ul>
                 <button class="search__project">Быстрый подбор проектов</button>
-                <button class="get__consultation">Получить консультацию</button>
+                <button class="get__consultation open__consultation">Получить консультацию</button>
                 <div class="cover__blur"></div>
             </div>
             <picture>
@@ -228,6 +228,17 @@
         </section>
     </main>
     <footer></footer>
+    <div class="overlay"></div>
+    <div class="modal__window__consultation">
+        <h2 class="consultation__title">Обратный звонок</h2>
+        <p class="consultation__description">Оставьте ваши контактные данные и наш менеджер с вами свяжется</p>
+        <input class="consultation__input input__name" type="text" placeholder="Введите ваше имя">
+        <input class="consultation__input input__tel" type="tel" placeholder="(___) ___ - __ - __">
+        <button class="consultation__send">оставить заявку</button>
+        <button class="close__consultation__modal">
+            <div class="line"></div>
+        </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
     <script src="./index.js"></script>

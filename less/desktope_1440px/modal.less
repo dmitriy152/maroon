@@ -1,0 +1,134 @@
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: radial-gradient(36.4% 84.21% at 99.67% 99%, rgba(233, 175, 143, 0.7) 0%, rgba(233, 175, 143, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(29.19% 70.76% at 0% 0%, rgba(233, 175, 143, 0.7) 0%, rgba(233, 175, 143, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(247, 243, 239, 0.7);
+    backdrop-filter: blur(20px);
+}
+.overlay-active {
+    z-index: 110;
+}
+.modal__window__consultation {
+    position: fixed;
+    top: 50%;
+    left: -100vw;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 36.90vw;
+    padding: 4.56vw 4.37vw;
+    background: #FFFFFF;
+    border-radius: 0.33vw;
+    transition: left 0.8s ease-in-out;
+    .consultation__title {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.17vw;
+        line-height: 3.84vw;
+        text-align: center;
+        color: #313131;
+        padding: 0px;
+        margin: 0px 0px 1.65vw 0px;
+    }
+    .consultation__description {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.19vw;
+        line-height: 1.98vw;
+        text-align: center;
+        color: #313131;
+        padding: 0px;
+        margin: 0px 0px 3.37vw 0px;
+    }
+    .consultation__input {
+        box-sizing: border-box;
+        padding: 1.39vw 1.72vw;
+        width: 27.91vw;
+        height: 4.43vw;
+        border: 0.07vw solid rgba(49, 49, 49, 0.2);
+        border-radius: 0.33vw;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.19vw;
+        line-height: 1.59vw;
+        letter-spacing: 0.05em;
+        color: #313131;
+    }
+    .input__name {
+        margin: 0px 0px 1.32vw 0px;
+    }
+    .input__tel {
+        margin: 0px 0px 2.12vw 0px;
+    }
+    .consultation__send {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1.52vw 7.94vw;
+        background: linear-gradient(90deg, #e7bd75 0%, #e29267 100%);
+        box-shadow: inset 0px -0.20vw 0.07vw rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.06vw;
+        line-height: 1.39vw;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        opacity: 0.8;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .consultation__send:hover {
+        opacity: 1;
+    }
+    .consultation__send:active {
+        opacity: 1;
+    }
+    .close__consultation__modal {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        width: 1.98vw;
+        height: 1.98vw;
+        position: absolute;
+        top: 0px;
+        right: -3.44vw;
+        cursor: pointer;
+    }
+    .line {
+        width: 1.06vw;
+        height: 2px;
+        background: #D9B474;
+        transform: rotate(45deg);
+        position: relative;
+    }
+    .line::after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: "";
+        transform: rotate(90deg);
+        width: 1.06vw;
+        height: 2px;
+        background: #D9B474;
+    }
+}
+.modal__window__consultation-active {
+    left: 50%;
+}
