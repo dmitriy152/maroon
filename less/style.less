@@ -1,22 +1,17 @@
 /*reset css */
 @import url("./reset.less");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 body {
-  font-family: 'TT Firs Neue';
-  font-style: normal;
-  opacity: 1;
-  background-color: white;
-  transition: all 2s ease-in-out;
   position: relative;
+  font-family: 'Evolventa', sans-serif;
+  max-width: 100%;
+  --scrollTop: 0px;
 }
 *{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-@import url("./mobile_320px/main.less") (min-width: 320px);
-@import url("./tablet_728px/main.less") (min-width: 728px);
-@import url("./desktope_1440px/main.less") (min-width: 1440px);
+@import url("./mobile_320px/main.less") (max-width: 767px);
+@import url("./tablet_768px/main.less") (min-width: 768px) and (max-width: 1279px);
+@import url("./desktope_1440px/main.less") (min-width: 1280px);
 
 

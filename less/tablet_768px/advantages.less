@@ -1,0 +1,118 @@
+.advantages {
+    padding: 11.7vw 9.5vw 12.8vw 9.5vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .advantages__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80.7vw;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 6.2vw;
+        line-height: 8.3vw;
+        text-align: center;
+        color: #313131;
+        padding: 0px;
+        margin: 0px 0px 5.97vw 0px;
+    }
+    .advantages__cards__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .card__item {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0.25vw solid #F7F3EF;
+        border-radius: 0.64vw;
+        width: 77.9vw;
+        box-sizing: border-box;
+        margin: 0px 0px 3.5vw 0px;
+        padding: 5.32vw 4.93vw;
+    }
+    .card__item:last-child {
+        margin: 0px;
+    }
+    .card__icon {
+        width: 11.68vw;
+        height: 11.68vw;
+        border-radius: 50%;
+        background: #F7F3EF;
+        position: relative;
+        margin: 0px 0px 4.15vw 0px;
+    }
+    .keys {
+        position: absolute;
+        top: 5.32vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 11vw;
+        height: 8.1vw;
+    }
+    .burj {
+        position: absolute;
+        top: 1.8vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5vw;
+        height: 11.7vw;
+    }
+    .hand {
+        position: absolute;
+        top: 5vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 11vw;
+        height: 8.44vw;
+    }
+    .card__title {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.11vw;
+        line-height: 4.41vw;
+        text-align: center;
+        background: linear-gradient(90deg, #E9C88F 0%, #E9AF8F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin: 0px 0px 2.33vw 0px;
+    }
+    .card__description {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.07vw;
+        line-height: 3.11vw;
+        text-align: center;
+        color: #313131;
+    }
+}
+.circle__advertanges {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateY(-80%);
+    width: 21.29vw;
+    height: 70.5vw;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    svg {
+        width: 21.29vw;
+        height: 70.5vw;
+    }
+}
+.circle__advertanges-active {
+    opacity: 1;
+}
