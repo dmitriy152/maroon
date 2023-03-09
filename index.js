@@ -22,7 +22,15 @@ setTimeout(function(){
     modalCatalog.classList.add("modal__catalog-active")
     circleAdvantages.classList.add("circle__advertanges-active")
     circleCover.classList.add("circle__cover-active")
+    if(modalCatalog.classList.contains("modal__catalog-active")){
+        setTimeout(function(){
+            modalCatalog.classList.remove("modal__catalog-active")
+            circleAdvantages.classList.remove("circle__advertanges-active")
+            circleCover.classList.remove("circle__cover-active")
+        }, 10000)
+    }
 }, 2500)
+
 closeCatalogModal.addEventListener("click", function(){
     modalCatalog.classList.remove("modal__catalog-active")
     circleAdvantages.classList.remove("circle__advertanges-active")
