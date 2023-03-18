@@ -1,0 +1,158 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 14.35vw;
+    padding: 2.25vw 12.10vw 3.11vw 12.10vw;
+    background-color:  #F7F3EF;
+    .footer__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 3.84vw 0px 0px;
+        border-right: 0.07vw solid #DFD4CA;
+    }
+    .logo__img {
+        width: 9.19vw;
+        height: 1.98vw;
+        object-fit: cover;
+    }
+    .footer__reserved {
+        margin: 0px;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.79vw;
+        line-height: 1.72vw;
+        color: #313131;
+    }
+    .footer__privacy {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size:  0.79vw;
+        line-height: 1.72vw;
+        text-decoration-line: underline;
+        color: #D9B474;
+    }
+    .footer__navigation {
+        width: 20.57vw;
+        height: 7.94vw;
+    }
+    .navigation__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px;
+        width: 20.57vw;
+        height: 8.60vw;
+    }
+    .navigation__item {
+        width: auto;
+        height: auto;
+        a {
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        a:hover {
+            border-bottom: 1px solid #D9B474;
+        }
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.06vw;
+        line-height: 1.98vw;
+        color: #313131;
+    }
+    .footer__media {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .media__link {
+        display: flex;
+        align-items: center;
+    }
+    .media__links__conteiner {
+        display: flex;
+        align-items: center;
+        margin: 0px 2.12vw 0px 0px;
+        padding: 0px;
+    }
+    .meadia__links__item {
+        padding: 0px;
+        margin: 0px 1.52vw 0px 0px;
+        list-style: none;
+    }
+    .meadia__links__item:last-child {
+        margin: 0px;
+    }
+    .meadia__links__item:hover{
+        .telegramm {
+            path {
+                stroke: #e48d5f;
+            }
+        }
+        .youtube, .whatsapp{
+            path{
+                fill: #e48d5f;
+            }
+        }
+    }
+    .call__me__button {
+        border: none;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.79vw;
+        line-height: 1.06vw;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 1.06vw 1.32vw;
+        background: linear-gradient(90deg, #e7bd75 0%, #e29267 100%);
+        opacity: 0.8;
+        transition: opacity 0.3s ease-in-out;
+        box-shadow: inset 0px -0.20vw 0.07vw rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .call__me__button:hover {
+        opacity: 1;
+    }
+    .call__me__button:active {
+        opacity: 1;
+    }
+    .media__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .phone {
+        margin: 0px 0px 0.86vw 0px;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.06vw;
+        line-height: 1.39vw;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #313131;
+    }
+    .e-mail {
+        margin: 0px;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.06vw;
+        line-height: 1.39vw;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #313131;
+    }
+}

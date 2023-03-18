@@ -64,3 +64,53 @@ closeConsultationWindow = function (){
 sendConsultationModal.addEventListener("click", closeConsultationWindow)
 closeConsultationModal.addEventListener("click", closeConsultationWindow)
 overlay.addEventListener("click", closeConsultationWindow)
+
+let journalTitel = document.querySelector(".journal__title")
+if (window.matchMedia('screen and (min-width:728px) and (max-width:1439px)').matches) {
+    journalTitel.innerHTML = "Получите каталог <span class=\"bold\">с самыми популярными </span><span class=\"bold\">объектами</span> недвижимости</span> в Дубае";
+}
+let journal = document.querySelector(".journal")
+window.addEventListener("scroll", function () {
+    if(window.scrollY > journal.offsetTop - 300){
+        journal.classList.add("journal-animation")
+    }
+})
+
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+        allowTouchMove: false,
+        noSwiping: true,
+        preventInteractionOnTransition: true,
+    },
+  });
+
+  document.querySelector(".slide__one__next").addEventListener("click",function(){
+    swiper2.slideNext()
+  })
+
+  let nextBtn = document.querySelectorAll(".progress__button__next")
+  for(let i = 0; i < nextBtn.length; i++){
+    nextBtn[i].addEventListener("click", function(){
+        swiper2.slideNext()
+    })
+  }
+  let prevtBtn = document.querySelectorAll(".progress__button__prev")
+  for(let i = 0; i < prevtBtn.length; i++){
+    prevtBtn[i].addEventListener("click", function(){
+        swiper2.slidePrev()
+    })
+  }

@@ -1,0 +1,140 @@
+.journal {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    picture {
+        max-height: 46.30vw;
+    }
+    .journal__download {
+        box-sizing: border-box;
+        padding: 2.84vw 0px 3.64vw 0px;
+        width: 25.66vw;
+        max-height: 46.30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #313131;
+        border-image: linear-gradient(#E9C88F, #E9AF8F) 30;
+        border-width: 0px 0.20vw 0px 0.20vw;
+        border-style: solid;
+        border-image-slice: 0px 0.20vw 0px 0.20vw;
+        transition: border 1.3s ease-in-out;
+        position: relative;
+        z-index: 15;
+    }
+    .journal__title {
+        width: 18.58vw;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.32vw;
+        line-height: 1.85vw;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0px 0px 0.66vw 0px;
+    }
+    .bold {
+        font-weight: 700;
+        border-image: linear-gradient(#E9C88F, #E9AF8F) 30;
+        border-width: 0px 0px 0.20vw 0px;
+        border-style: solid;
+        border-image-slice: 0px 0px 0.20vw 0px;
+    }
+    .journals__interior {
+        width: 25.66vw;
+        margin: 0px 0px 1.12vw 0px;
+    }
+    .catalog__download {
+        border: none;
+        padding: 1.52vw 4.17vw;
+        background: linear-gradient(90deg, #e7bd75 0%, #e29267 100%);
+        box-shadow: inset 0px -0.20vw 0.07vw rgba(0, 0, 0, 0.15);
+        border-radius: 0.33vw;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.19vw;
+        line-height: 1.59vw;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.85;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .catalog__download:hover {
+        opacity: 1;
+    }
+    .catalog__download:active {
+        opacity: 1;
+    }
+    .journals__photos {
+        width: 24.80vw;
+        height: 46.30vw;
+    }
+    .bg-bath {
+        width: 24.80vw;
+        height: 46.30vw;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #313131;
+        z-index: 11;
+        transition: top 1.3s ease-in-out;
+    }
+    .bg-kitchen {
+        width: 24.80vw;
+        height: 46.30vw;
+        position: absolute;
+        bottom: 0px;
+        right: 24.80vw;
+        background-color: #313131;
+        z-index: 11;
+        transition: top 1.3s ease-in-out;
+    }
+    .bg-office {
+        width: 24.80vw;
+        height: 46.30vw;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #313131;
+        z-index: 11;
+        transition: top 1.3s ease-in-out;
+    }
+}
+.journal-animation {
+    .journal__download {
+        border-image: linear-gradient(#e9c88f00, #e9af8f00) 30;
+    }
+    .bg-bath {
+        top: -46.30vw;
+    }
+    .bg-kitchen {
+        animation: journal-animation-kitchen 1.3s 2s forwards;
+    }
+    .bg-office {
+        animation: journal-animation-office 1.3s 3.3s forwards;
+    }
+}
+@keyframes journal-animation-office {
+    0% {
+        top: 0px
+    }
+    100%{
+        top: -46.30vw;
+    }
+}
+@keyframes journal-animation-kitchen {
+    0% {
+        bottom: 0px;
+    }
+    100%{
+        bottom: -46.30vw;
+    }
+}
