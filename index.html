@@ -97,7 +97,7 @@
             </picture>
             <div class="modal__catalog">
                 <h2 class="catalog__subtitle">Получите каталог <span class="bold">с самыми популярными объектами недвижимости</span> в Дубае</h2>
-                <button class="catalog__download">Скачать каталог</button>
+                <button class="catalog__download" onclick="window.open('catalog.pdf')">Скачать каталог</button>
                 <svg class="catalog__icon" width="217" height="178" viewBox="0 0 217 178" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_b_1176_2041)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M36.9722 0.240232H0.613281V177.995H36.9722V107.298H105.649V68.9194H36.9722V0.240232ZM67.2726 177.994V139.615H126.41C154.043 139.316 176.351 116.823 176.351 89.1198C176.351 61.2302 153.742 38.6212 125.852 38.6212H71.3122V0.242676H127.871C176.957 0.242676 216.749 40.0345 216.749 89.1201C216.749 135.482 181.25 173.553 135.951 177.635V177.994H128.655C128.394 177.996 128.133 177.998 127.871 177.998H71.3122V177.994H67.2726Z" fill="#3A3A3A" fill-opacity="0.1"/>
@@ -235,7 +235,7 @@
                 <picture>
                     <img src="img/journal/journal.png" alt="" class="journals__interior">
                 </picture>
-                <button class="catalog__download">скачать каталог</button>
+                <button class="catalog__download" onclick="window.open('catalog.pdf')">скачать каталог</button>
             </div>
             <picture>
                 <img src="img/journal/kitchen.png" alt="" class="journal__photo__kitchen journals__photos">
@@ -289,13 +289,147 @@
                 </div>
             </div>
         </section>
+        <section class="partners">
+            <h2 class="partners__title">Мы являемся партнерами ведущих застройщиков</h2>
+            <h3 class="partners__subtitle">Но и ваш уютный дом, который часто при получении ключей наши клиенты не хотят перепродавать. Квартиры и проекты идеальны</h3>
+            <div class="partners__wrapper">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <svg class="partners__item__bg" width="164" height="180" viewBox="0 0 164 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_109_1683)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.714 174.865C163.714 177.626 161.476 179.865 158.714 179.865H5C2.23858 179.865 0 177.626 0 174.865V74.0125C0 72.5902 0.605673 71.2353 1.66543 70.2868L78.5226 1.49758C80.421 -0.201528 83.2933 -0.201527 85.1917 1.49758L162.049 70.2868C163.109 71.2353 163.714 72.5902 163.714 74.0125V174.865Z" fill="#313131"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_b_109_1683" x="-50" y="-49.7769" width="263.714" height="279.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_109_1683"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_109_1683" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <picture>
+                            <img class="partners__item__img sobha" src="img/partners/sobha.png" alt="">
+                        </picture> 
+                    </li>
+                    <li class="partners__item">
+                        <svg class="partners__item__bg" width="164" height="180" viewBox="0 0 164 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_109_1683)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.714 174.865C163.714 177.626 161.476 179.865 158.714 179.865H5C2.23858 179.865 0 177.626 0 174.865V74.0125C0 72.5902 0.605673 71.2353 1.66543 70.2868L78.5226 1.49758C80.421 -0.201528 83.2933 -0.201527 85.1917 1.49758L162.049 70.2868C163.109 71.2353 163.714 72.5902 163.714 74.0125V174.865Z" fill="#313131"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_b_109_1683" x="-50" y="-49.7769" width="263.714" height="279.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_109_1683"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_109_1683" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <picture>
+                            <img class="partners__item__img damac" src="img/partners/damac.png" alt="">
+                        </picture> 
+                    </li>
+                    <li class="partners__item">
+                        <svg class="partners__item__bg" width="164" height="180" viewBox="0 0 164 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_109_1683)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.714 174.865C163.714 177.626 161.476 179.865 158.714 179.865H5C2.23858 179.865 0 177.626 0 174.865V74.0125C0 72.5902 0.605673 71.2353 1.66543 70.2868L78.5226 1.49758C80.421 -0.201528 83.2933 -0.201527 85.1917 1.49758L162.049 70.2868C163.109 71.2353 163.714 72.5902 163.714 74.0125V174.865Z" fill="#313131"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_b_109_1683" x="-50" y="-49.7769" width="263.714" height="279.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_109_1683"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_109_1683" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <picture>
+                            <img class="partners__item__img nakhel" src="img/partners/nakhel.png" alt="">
+                        </picture> 
+                    </li>
+                    <li class="partners__item">
+                        <svg class="partners__item__bg" width="164" height="180" viewBox="0 0 164 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_109_1683)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.714 174.865C163.714 177.626 161.476 179.865 158.714 179.865H5C2.23858 179.865 0 177.626 0 174.865V74.0125C0 72.5902 0.605673 71.2353 1.66543 70.2868L78.5226 1.49758C80.421 -0.201528 83.2933 -0.201527 85.1917 1.49758L162.049 70.2868C163.109 71.2353 163.714 72.5902 163.714 74.0125V174.865Z" fill="#313131"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_b_109_1683" x="-50" y="-49.7769" width="263.714" height="279.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_109_1683"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_109_1683" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <picture>
+                            <img class="partners__item__img emaar" src="img/partners/emaar.png" alt="">
+                        </picture> 
+                    </li>
+                    <li class="partners__item">
+                        <svg class="partners__item__bg" width="164" height="180" viewBox="0 0 164 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_109_1683)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.714 174.865C163.714 177.626 161.476 179.865 158.714 179.865H5C2.23858 179.865 0 177.626 0 174.865V74.0125C0 72.5902 0.605673 71.2353 1.66543 70.2868L78.5226 1.49758C80.421 -0.201528 83.2933 -0.201527 85.1917 1.49758L162.049 70.2868C163.109 71.2353 163.714 72.5902 163.714 74.0125V174.865Z" fill="#313131"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_b_109_1683" x="-50" y="-49.7769" width="263.714" height="279.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_109_1683"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_109_1683" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <picture>
+                            <img class="partners__item__img omniyat" src="img/partners/omniyat.png" alt="">
+                        </picture> 
+                    </li>
+                    <li class="partners__item">
+                        <svg class="partners__item__bg" width="164" height="180" viewBox="0 0 164 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_109_1683)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.714 174.865C163.714 177.626 161.476 179.865 158.714 179.865H5C2.23858 179.865 0 177.626 0 174.865V74.0125C0 72.5902 0.605673 71.2353 1.66543 70.2868L78.5226 1.49758C80.421 -0.201528 83.2933 -0.201527 85.1917 1.49758L162.049 70.2868C163.109 71.2353 163.714 72.5902 163.714 74.0125V174.865Z" fill="#313131"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_b_109_1683" x="-50" y="-49.7769" width="263.714" height="279.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_109_1683"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_109_1683" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <picture>
+                            <img class="partners__item__img meraas" src="img/partners/meraas.png" alt="">
+                        </picture> 
+                    </li>
+                    <li class="partners__item">
+                        <svg class="partners__item__bg" width="164" height="180" viewBox="0 0 164 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_109_1683)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M163.714 174.865C163.714 177.626 161.476 179.865 158.714 179.865H5C2.23858 179.865 0 177.626 0 174.865V74.0125C0 72.5902 0.605673 71.2353 1.66543 70.2868L78.5226 1.49758C80.421 -0.201528 83.2933 -0.201527 85.1917 1.49758L162.049 70.2868C163.109 71.2353 163.714 72.5902 163.714 74.0125V174.865Z" fill="#313131"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_b_109_1683" x="-50" y="-49.7769" width="263.714" height="279.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_109_1683"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_109_1683" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <picture>
+                            <img class="partners__item__img sobha" src="img/partners/sobha.png" alt="">
+                        </picture> 
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section class="catalog__slider">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <h2 class="slide__title">Недвижимость от $150,000</h2>
                         <ul class="slider__card">
-                            <li class="card">
+                            <li class="card loft">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__1.png" alt="">
                                 </picture>
@@ -322,15 +456,11 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
-                            <li class="card">
+                            <li class="card loft">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__2.png" alt="">
                                 </picture>
@@ -357,15 +487,11 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
-                            <li class="card">
+                            <li class="card loft">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__3.png" alt="">
                                 </picture>
@@ -392,11 +518,7 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
@@ -405,7 +527,7 @@
                     <div class="swiper-slide">
                         <h2 class="slide__title">Недвижимость от $300,000</h2>
                         <ul class="slider__card">
-                            <li class="card">
+                            <li class="card modern">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__4.png" alt="">
                                 </picture>
@@ -432,15 +554,11 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
-                            <li class="card">
+                            <li class="card modern">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__5.png" alt="">
                                 </picture>
@@ -467,15 +585,11 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
-                            <li class="card">
+                            <li class="card modern">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__6.png" alt="">
                                 </picture>
@@ -502,11 +616,7 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
@@ -515,7 +625,7 @@
                     <div class="swiper-slide">
                         <h2 class="slide__title">Недвижимость от $700,000</h2>
                         <ul class="slider__card">
-                            <li class="card">
+                            <li class="card minimalism">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__7.png" alt="">
                                 </picture>
@@ -542,15 +652,11 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
-                            <li class="card">
+                            <li class="card minimalism">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__8.png" alt="">
                                 </picture>
@@ -577,15 +683,11 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
-                            <li class="card">
+                            <li class="card minimalism">
                                 <picture>
                                     <img class="card__photo" src="img/catalog/card__photo__9.png" alt="">
                                 </picture>
@@ -612,11 +714,7 @@
                                     </div>
                                     <div class="price">
                                         <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
-                                        <button class="price__arrow">
-                                            <svg class="arrow" width="44" height="8" viewBox="0 0 44 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M43.3536 4.35356C43.5488 4.1583 43.5488 3.84171 43.3536 3.64645L40.1716 0.46447C39.9763 0.269207 39.6597 0.269207 39.4645 0.46447C39.2692 0.659732 39.2692 0.976314 39.4645 1.17158L42.2929 4L39.4645 6.82843C39.2692 7.02369 39.2692 7.34028 39.4645 7.53554C39.6597 7.7308 39.9763 7.7308 40.1716 7.53554L43.3536 4.35356ZM-4.37114e-08 4.5L43 4.5L43 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#D9B474"/>
-                                            </svg>                                            
-                                        </button>
+                                        <button class="price__more">Подробнее</button>
                                     </div>
                                 </div>
                             </li>
@@ -625,6 +723,58 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <picture>
+                    <img class="image__max" src="" alt="">
+                </picture>
+                <div class="modal__card__more">
+                    <div class="modal__card__main">
+                        <picture>
+                            <img class="card__image_max" src="img/catalog/card__photo__1.png" alt="">
+                        </picture>
+                        <div class="card__info">
+                            <h3 class="card__title">Прекрасная и росокшная вилла на берегу моря</h3>
+                            <div class="info__parameters">
+                                <div class="rooms">
+                                    <svg class="rooms__icon" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.29734V10.25C0 10.4929 0.232224 10.7189 0.602615 10.7189C0.811758 10.7189 1.07139 10.4592 1.07139 10.25V9.64705H13.9286V10.25C13.9286 10.4929 14.1608 10.7189 14.5313 10.7189C14.7404 10.7189 15 10.4592 15 10.25V6.29734C15 5.57988 14.244 4.82349 13.5268 4.82349H1.47322C0.755987 4.82349 0 5.57988 0 6.29734Z" fill="#D9B474"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.60742 0.468982V3.7517H3.21455V3.3497C3.21455 1.89681 4.58434 2.14379 5.75924 2.14379C6.51688 2.14379 6.96455 2.59166 6.96455 3.3497V3.7517H8.03603V3.3497C8.03603 1.89681 9.40574 2.14379 10.5806 2.14379C11.3384 2.14379 11.786 2.59166 11.786 3.3497V3.7517H13.3932V0.468982C13.3932 0.259828 13.1335 0 12.9245 0H2.07612C1.86706 0 1.60742 0.259828 1.60742 0.468982Z" fill="#D9B474"/>
+                                    </svg>
+                                    <p class="rooms__text">8 комнат</p>
+                                </div>
+                                <div class="square">
+                                    <svg class="square__icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31641 10.0195V13.3008C8.31641 14.2275 9.07157 15 9.89776 15H13.4119C14.2206 15 14.9932 14.227 14.9932 13.418V9.90235C14.9932 9.07408 14.2196 8.32031 13.2947 8.32031H10.0149C9.07667 8.32031 8.31641 9.0809 8.31641 10.0195Z" fill="#D9B474"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.90235V13.418C0 14.227 0.772661 15 1.58135 15H5.09549C5.92003 15 6.67677 14.2286 6.67677 13.3008V10.0195C6.67677 9.0809 5.91658 8.32031 4.9783 8.32031H1.69847C0.772248 8.32031 0 9.0758 0 9.90235Z" fill="#D9B474"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.58203V5.09769C0 5.92424 0.772248 6.67965 1.69847 6.67965H4.9783C5.91568 6.67965 6.67677 5.91824 6.67677 4.98045V1.69921C6.67677 0.77389 5.9234 0 5.09549 0H1.58135C0.772661 0 0 0.772994 0 1.58203Z" fill="#D9B474"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31641 1.69921V4.98045C8.31641 5.919 9.07873 6.67965 10.0149 6.67965H13.2947C13.7891 6.67965 14.2169 6.46585 14.4741 6.21889C14.7175 5.9851 14.9932 5.55976 14.9932 5.09769V1.58203C14.9932 0.772994 14.2206 0 13.4119 0H9.89776C9.07157 0 8.31641 0.77258 8.31641 1.69921Z" fill="#D9B474"/>
+                                    </svg>
+                                    <p class="square__text">120 кв. м.</p>    
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="sum"><span class="sum__icon">$</span> 287, 672</div>
+                            </div>
+                            <p class="card__description">Ведущий застройщик элитной недвижимости предлагает элегантную среднеэтажную башню в серо-белых тонах, в которой представлены роскошные дизайнерские студии и 1-2 спальные апартаменты с исключительной отделкой.</p>
+                        </div>
+                    </div>
+                    <div class="modal__card__img">
+                        <picture>
+                            <img class="card__image_min" src="img/catalog/card__photo__1.png" alt="">
+                        </picture>
+                        <picture>
+                            <img class="card__image_min" src="img/catalog/card__photo__2.png" alt="">
+                        </picture>
+                        <picture>
+                            <img class="card__image_min" src="img/catalog/card__photo__3.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="modal__card__button">
+                        <button class="call__me open__consultation">оставить заявку</button>
+                    </div>
+                    <button class="close__modal__more">
+                        <div class="line"></div>
+                    </button>
+                </div>
               </div>
         </section>
         <section class="telegram__cover">
@@ -662,11 +812,11 @@
             <div class="swiper2 mySwiper2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="slide__wrapper slide__one">
-                        <div class="slide__one__info">
-                            <h2 class="slide__one__title">Подберите вариант недвижимости в ОАЭ за 1 минуту</h2>
-                            <p class="slide__one__description">Ответьте на несколько вопросов и <span class="bold">получите подборку с лучшими предложениями</span> на рынке недвижимости Дубая по вашим параметрам</p>
-                            <div class="slide__one__sale">
+                    <div class="slide__wrapper slide__main">
+                        <div class="slide__main__info">
+                            <h2 class="slide__main__title">Подберите вариант недвижимости в ОАЭ за 1 минуту</h2>
+                            <p class="slide__main__description">Ответьте на несколько вопросов и <span class="bold">получите подборку с лучшими предложениями</span> на рынке недвижимости Дубая по вашим параметрам</p>
+                            <div class="slide__main__sale">
                                 <svg class="sale__gift" width="139" height="139" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="69.5" cy="69.5" r="69.5" fill="url(#paint0_radial_119_692)"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M71.4166 102.071V67.7393L78.3823 64.6132C79.4502 64.1145 84.8867 61.603 85.5834 61.5451V95.8772C84.8844 96.0399 84.5186 96.3561 83.8637 96.636C83.191 96.9239 82.7938 97.1252 82.1439 97.3949L75.0179 100.538C74.0638 100.983 72.3644 101.85 71.4166 102.071ZM54.4165 61.5451C55.1057 61.6027 57.1373 62.662 57.9335 62.9858L68.5834 67.7393V102.071C68.124 101.964 67.2671 101.563 66.8155 101.36L54.4165 95.8772V61.5451ZM88.4165 94.4615V60.1294C89.0263 59.9875 89.4903 59.6683 90.0352 59.4466C90.6597 59.192 91.074 58.9644 91.629 58.7385L101.167 54.4665V88.9755L91.7065 93.1477C90.9023 93.4817 89.1505 94.4003 88.4165 94.4615ZM38.8334 54.4665C39.7787 54.9662 40.951 55.482 41.9961 55.9069L48.371 58.7385C48.926 58.9644 49.3403 59.192 49.9648 59.4466C50.5097 59.6683 50.9737 59.9875 51.5834 60.1294V94.4615C50.8817 94.4029 43.3784 90.9027 42.0716 90.3404L38.8334 88.9755V54.4665ZM56.7187 59.0675C57.3891 59.0119 63.7586 56.1348 64.9669 55.6306C68.7459 54.0535 66.8053 54.4665 72.1248 54.4665C72.7537 54.4665 78.9393 57.3443 80.3457 57.9312C81.0599 58.2293 82.632 59.0135 83.2813 59.0675C82.9029 59.5837 82.4464 59.5896 81.8054 59.8936L70 65.0845C69.9951 65.0845 57.1669 59.6789 56.7187 59.0675ZM78.323 53.9356L82.1455 53.1547C83.4784 52.8882 84.6237 52.6336 85.83 52.2354C87.0419 51.8352 88.0494 51.4004 89.1242 50.9261C90.2273 50.4393 91.0819 49.744 91.9583 49.1574C92.4994 49.4436 93.0538 49.6287 93.6698 49.9245L98.8647 52.1659C98.5275 52.6257 88.2142 57.1249 87.4555 57.4204C86.6058 57.7507 85.152 56.8206 83.5749 56.1197L78.323 53.9356ZM41.1356 52.1659L48.0417 49.1574C48.9181 49.744 49.7727 50.4393 50.8758 50.9261C51.9506 51.4004 52.9581 51.8352 54.17 52.2354C56.1436 52.8872 61.2785 53.683 61.677 53.9356L53.8322 57.2583C52.592 57.8116 53.1312 57.59 51.3313 56.842C50.8162 56.6279 41.5304 52.7047 41.1356 52.1659ZM72.1248 51.4581C72.2385 50.0928 75.0067 46.0307 76.0729 44.7853C85.8712 33.3443 92.6666 38.7094 92.6666 42.6095C92.6666 43.429 92.1076 44.6964 91.753 45.2359C90.4402 47.2319 87.0893 48.7572 84.8349 49.4713C82.2583 50.2871 74.9467 51.4581 72.1248 51.4581ZM47.3334 42.6095C47.3334 41.2472 48.2652 39.8543 49.0727 39.2156C49.5041 38.8744 50.0786 38.5417 50.6392 38.3036C53.9106 36.9146 57.9032 39.0964 60.208 41.069C61.1955 41.9138 62.1842 42.735 62.9917 43.7735C63.318 44.1938 63.52 44.3275 63.8285 44.7069C64.9593 46.0979 67.7433 49.8781 67.8752 51.4581L61.2963 50.7769C56.9817 50.0302 51.0798 49.021 48.3407 45.3192C47.8595 44.6694 47.3334 43.648 47.3334 42.6095ZM65.0417 41.5479C66.1811 41.2824 69.2838 39.4999 70 39.4999C70.7162 39.4999 73.8189 41.2824 74.9583 41.5479C74.5611 42.1405 74.1406 42.5657 73.6923 43.1141C72.7988 44.2076 70.4334 47.527 70.177 48.6264H69.823C69.2983 46.3762 65.9131 42.8483 65.0417 41.5479ZM44.5 42.0785C44.5 45.9108 45.2719 45.0281 45.7396 47.0339L40.6636 49.217C39.282 49.8619 36 50.9913 36 51.989V90.2143C36 90.9461 37.0339 91.3246 37.643 91.5808C38.3885 91.8947 39.0965 92.2185 39.8367 92.5739C45.5464 95.3146 53.0096 98.2921 59.0805 101.127C60.9506 102 69.3675 105.787 70 105.787C70.8282 105.787 81.2217 100.938 83.0018 100.199C84.4902 99.5813 85.8603 98.9841 87.295 98.2954C91.1534 96.4434 96.1038 94.4701 100.164 92.5742C101.431 91.9823 104 91.1872 104 90.2143V51.989C104 51.2245 102.604 50.6527 102.027 50.4209L94.2604 47.0339C94.7281 45.0281 95.5 45.9108 95.5 42.0785C95.5 38.294 91.3976 35 87.5313 35C83.6837 35 80.6657 36.4509 78.1997 38.5944C77.0782 39.5697 77.7835 39.688 74.4299 38.1824C69.4341 35.9394 70.6855 35.7935 65.6903 38.1257C64.959 38.4676 64.257 38.7753 63.5962 39.0585C62.6776 39.4525 62.8312 39.4548 61.7989 38.5954C53.0887 31.343 44.5 36.3899 44.5 42.0785Z" fill="url(#paint1_linear_119_692)"/>
@@ -683,7 +833,7 @@
                                 </svg>
                                 <h3 class="sale__subtitle">А также вы получите скидку 5% на покупку недвижимости</h3>
                             </div>
-                            <button class="slide__one__next">
+                            <button class="slide__main__next">
                                 <span>пройти опрос</span>
                                 <svg class="next__arrow" width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.9922 17.7016L10.601 9.92377C11.0679 9.44649 11.0679 8.67265 10.601 8.19537L2.9922 0.417534C2.52528 -0.0597516 1.76827 -0.0597516 1.30136 0.417534C0.834442 0.894821 0.834442 1.66866 1.30136 2.14594L8.06473 9.05957L1.30136 15.9732C0.834443 16.4505 0.834443 17.2243 1.30136 17.7016C1.76827 18.1789 2.52529 18.1789 2.9922 17.7016Z" fill="white"/>
@@ -691,7 +841,7 @@
                             </button>
                         </div>
                         <picture>
-                            <img src="img/survey/one__slide__img.jpg" alt="">
+                            <img src="img/survey/main__slide__img.jpg" alt="">
                         </picture>
                         <svg class="label" width="1512" height="122" viewBox="0 0 1512 122" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M211.347 213.845H179.569H163.725H132.857V128.61H46.7122V213.845H0V1.51663H46.7122V85.5379H132.857V1.51663H179.569V176.611L254.723 0H297.795L388.793 213.845H339.957L320.544 166.223H230.76L211.347 213.845ZM275.652 56.1153L247.443 124.97H303.861L275.652 56.1153ZM399.314 213.845H446.027V129.217L508.154 31.9842V213.845H554.866V148.933L579.435 123.454L645.257 213.845H701.372L610.981 91.6044L697.429 1.51663H641.011L554.866 94.3344V1.51663H527.621H508.154H474.539L422.974 86.7512L372.318 1.51663H317.72L399.314 130.127V213.845ZM1254.49 213.845H1302.12L1321.53 166.223H1411.31L1430.73 213.845H1465.92H1479.56H1512.64V1.51663H1465.92V181.796L1388.56 0H1345.49L1282.44 148.165C1280.02 123.983 1265.44 111.392 1243.06 102.827C1258.23 94.3344 1270.97 80.988 1270.97 57.0253C1270.97 41.859 1266.12 30.0293 1256.41 20.3228C1244.28 8.1898 1225.17 1.51663 1200.9 1.51663H1103.27H1102.32H1056.56V123.15C1056.56 156.819 1039.27 174.109 1010.76 174.109C982.246 174.109 964.957 156.213 964.957 121.634V1.51663H918.245V61.1714C901.112 25.2978 863.736 1.51663 815.652 1.51663H732.844V213.845H815.652C866.006 213.845 904.615 187.421 920.534 148.777C929.152 194.131 961.64 217.181 1010.15 217.181C1061.79 217.181 1096.27 191.311 1102.32 138.67V213.845H1203.33C1227.01 213.845 1246.69 209.105 1260.54 199.626L1254.49 213.845ZM1338.21 124.97L1366.42 56.1153L1394.63 124.97H1338.21ZM779.556 171.682V43.6789H815.652C853.871 43.6789 879.654 70.0683 879.654 107.681C879.654 145.9 853.871 171.682 815.652 171.682H779.556ZM1147.82 42.4656V87.3579H1190.89C1211.52 87.3579 1224.56 80.6847 1224.56 64.3051C1224.56 50.3521 1213.64 42.4656 1193.93 42.4656H1147.82ZM1147.82 126.184V172.896H1203.33C1223.95 172.896 1236.39 165.616 1236.39 149.236C1236.39 134.98 1225.77 126.184 1201.81 126.184H1147.82Z" fill="url(#paint0_linear_119_684)" fill-opacity="0.1"/>
@@ -706,12 +856,12 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="slide__wrapper slide__two">
-                        <h2 class="slide__two__title">С какой целью вы планируете приобрести недвижимость?</h2>
+                    <div class="slide__wrapper slide__one">
+                        <h2 class="slide__one__title">С какой целью вы планируете приобрести недвижимость?</h2>
                         <div class="target">
                             <div class="target__card">
                                 <picture>
-                                    <img class="target__card__img" src="img/survey/slide__two__img1.jpg" alt="">
+                                    <img class="target__card__img" src="img/survey/slide__one__img1.jpg" alt="">
                                 </picture>
                                 <div class="checkbox__radio">
                                     <input type="radio" name="" id="">
@@ -720,7 +870,7 @@
                             </div>
                             <div class="target__card">
                                 <picture>
-                                    <img class="target__card__img" src="img/survey/slide__two__img2.jpg" alt="">
+                                    <img class="target__card__img" src="img/survey/slide__one__img2.jpg" alt="">
                                 </picture>
                                 <div class="checkbox__radio">
                                     <input type="radio" name="" id="">
@@ -748,7 +898,7 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="slide__wrapper slide__three">
+                    <div class="slide__wrapper slide__two">
                         <h2 class="slide__two__title">Какой тип жилья вы рассматриваете для покупки?</h2>
                         <div class="target target__three">
                             <div class="target__card">
@@ -813,30 +963,30 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="slide__wrapper slide__four">
-                        <h2 class="slide__four__title">Какой у вас бюджет на покупку?</h2>
+                    <div class="slide__wrapper slide__three">
+                        <h2 class="slide__three__title">Какой у вас бюджет на покупку?</h2>
                         <ul class="checkbox__list">
-                            <li class="checkbox__radio checkbox__four">
+                            <li class="checkbox__radio checkbox__three">
                                 <input type="radio" name="" id="">
                                 <label for="">Любые варианты</label>
                             </li>
-                            <li class="checkbox__radio checkbox__four">
+                            <li class="checkbox__radio checkbox__three">
                                 <input type="radio" name="" id="">
                                 <label for="">Менее 10 000 000 рублей</label>
                             </li>
-                            <li class="checkbox__radio checkbox__four">
+                            <li class="checkbox__radio checkbox__three">
                                 <input type="radio" name="" id="">
                                 <label for="">10 000 000 - 20 000 000 рублей</label>
                             </li>
-                            <li class="checkbox__radio checkbox__four">
+                            <li class="checkbox__radio checkbox__three">
                                 <input type="radio" name="" id="">
                                 <label for="">20 000 000 - 50 000 000 рублей</label>
                             </li>
-                            <li class="checkbox__radio checkbox__four">
+                            <li class="checkbox__radio checkbox__three">
                                 <input type="radio" name="" id="">
                                 <label for="">10 000 000 - 70 000 000 рублей</label>
                             </li>
-                            <li class="checkbox__radio checkbox__four">
+                            <li class="checkbox__radio checkbox__three">
                                 <input type="radio" name="" id="">
                                 <label for="">Более 70 000 000 рублей</label>
                             </li>
@@ -866,30 +1016,30 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="slide__wrapper slide__five">
-                        <h2 class="slide__five__title">Сколько комнат должно быть в апартаментах?</h2>
+                    <div class="slide__wrapper slide__four">
+                        <h2 class="slide__four__title">Сколько комнат должно быть в апартаментах?</h2>
                         <ul class="checkbox__list">
-                            <li class="checkbox__radio checkbox__five">
+                            <li class="checkbox__radio checkbox__four">
                                 <input type="radio" name="" id="">
                                 <label for="">Апартаменты-студия</label>
                             </li>
-                            <li class="checkbox__radio checkbox__five">
+                            <li class="checkbox__radio checkbox__four">
                                 <input type="radio" name="" id="">
                                 <label for="">Апартаменты с 1 комнатой</label>
                             </li>
-                            <li class="checkbox__radio checkbox__five">
+                            <li class="checkbox__radio checkbox__four">
                                 <input type="radio" name="" id="">
                                 <label for="">Апартаменты с 2 комнатами</label>
                             </li>
-                            <li class="checkbox__radio checkbox__five">
+                            <li class="checkbox__radio checkbox__four">
                                 <input type="radio" name="" id="">
                                 <label for="">Апартаменты с 3 комнатами</label>
                             </li>
-                            <li class="checkbox__radio checkbox__five">
+                            <li class="checkbox__radio checkbox__four">
                                 <input type="radio" name="" id="">
                                 <label for="">Апартаменты с 4 комнатами</label>
                             </li>
-                            <li class="checkbox__radio checkbox__five">
+                            <li class="checkbox__radio checkbox__four">
                                 <input type="radio" name="" id="">
                                 <label for="">Апартаменты с 4+ комнатами</label>
                             </li>
@@ -916,6 +1066,167 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide__wrapper slide__five">
+                        <h2 class="slide__five__title">Какова цель приобретения недвижимости?</h2>
+                        <ul class="checkbox__list checkbox__list__five">
+                            <li class="checkbox__radio checkbox__five">
+                                <input type="radio" name="" id="">
+                                <label for="">Для личного проживания в Дубае</label>
+                            </li>
+                            <li class="checkbox__radio checkbox__five">
+                                <input type="radio" name="" id="">
+                                <label for="">Для личного отдыха и получения пассивного дохода</label>
+                            </li>
+                            <li class="checkbox__radio checkbox__five">
+                                <input type="radio" name="" id="">
+                                <label for="">Только для инвестиций и получения дохода</label>
+                            </li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress__line">
+                                <div class="progress__counter">
+                                    <div class="progress__bold">05</div>
+                                    <span class="counter">/07</span>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="progress__button">
+                                <button class="progress__button__prev">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.95897 17.642L0.350183 9.8642C-0.11673 9.38692 -0.11673 8.61308 0.350183 8.1358L7.95897 0.357963C8.42589 -0.119322 9.1829 -0.119322 9.64982 0.357964C10.1167 0.835251 10.1167 1.60909 9.64982 2.08637L2.88645 9L9.64982 15.9136C10.1167 16.3909 10.1167 17.1647 9.64982 17.642C9.1829 18.1193 8.42589 18.1193 7.95897 17.642Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <button class="progress__button__next">
+                                    <span>следующий вопрос</span>
+                                    <svg class="next__arrow" width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.9922 17.7016L10.601 9.92377C11.0679 9.44649 11.0679 8.67265 10.601 8.19537L2.9922 0.417534C2.52528 -0.0597516 1.76827 -0.0597516 1.30136 0.417534C0.834442 0.894821 0.834442 1.66866 1.30136 2.14594L8.06473 9.05957L1.30136 15.9732C0.834443 16.4505 0.834443 17.2243 1.30136 17.7016C1.76827 18.1789 2.52529 18.1789 2.9922 17.7016Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide__wrapper slide__six">
+                        <h2 class="slide__six__title">Когда Вы планируете приобрести недвижимость в Дубае?</h2>
+                        <ul class="checkbox__list checkbox__list__six">
+                            <li class="checkbox__radio checkbox__six">
+                                <input type="radio" name="" id="">
+                                <label for="">В течении этого месяца</label>
+                            </li>
+                            <li class="checkbox__radio checkbox__six">
+                                <input type="radio" name="" id="">
+                                <label for="">В течении 2023 года</label>
+                            </li>
+                            <li class="checkbox__radio checkbox__six">
+                                <input type="radio" name="" id="">
+                                <label for="">Пока определяюсь, планирую покупку в ближайшие годы</label>
+                            </li>
+                            <li class="checkbox__radio checkbox__six">
+                                <input type="radio" name="" id="">
+                                <label for="">Просто интересуюсь, еще не планирую покупку</label>
+                            </li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress__line">
+                                <div class="progress__counter">
+                                    <div class="progress__bold">06</div>
+                                    <span class="counter">/07</span>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="progress__button">
+                                <button class="progress__button__prev">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.95897 17.642L0.350183 9.8642C-0.11673 9.38692 -0.11673 8.61308 0.350183 8.1358L7.95897 0.357963C8.42589 -0.119322 9.1829 -0.119322 9.64982 0.357964C10.1167 0.835251 10.1167 1.60909 9.64982 2.08637L2.88645 9L9.64982 15.9136C10.1167 16.3909 10.1167 17.1647 9.64982 17.642C9.1829 18.1193 8.42589 18.1193 7.95897 17.642Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <button class="progress__button__next">
+                                    <span>следующий вопрос</span>
+                                    <svg class="next__arrow" width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.9922 17.7016L10.601 9.92377C11.0679 9.44649 11.0679 8.67265 10.601 8.19537L2.9922 0.417534C2.52528 -0.0597516 1.76827 -0.0597516 1.30136 0.417534C0.834442 0.894821 0.834442 1.66866 1.30136 2.14594L8.06473 9.05957L1.30136 15.9732C0.834443 16.4505 0.834443 17.2243 1.30136 17.7016C1.76827 18.1789 2.52529 18.1789 2.9922 17.7016Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide__wrapper slide__seven">
+                        <h2 class="slide__seven__title">Вариант готовности</h2>
+                        <ul class="checkbox__list checkbox__list__seven">
+                            <li class="checkbox__radio checkbox__seven">
+                                <input type="radio" name="" id="">
+                                <label for="">Любые варианты</label>
+                            </li>
+                            <li class="checkbox__radio checkbox__seven">
+                                <input type="radio" name="" id="">
+                                <label for="">Не знаю застройщика</label>
+                            </li>
+                            <li class="checkbox__radio checkbox__seven">
+                                <input type="radio" name="" id="">
+                                <label for="">Готовый вариант</label>
+                            </li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress__line">
+                                <div class="progress__counter">
+                                    <div class="progress__bold">07</div>
+                                    <span class="counter">/07</span>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="progress__button">
+                                <button class="progress__button__prev">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.95897 17.642L0.350183 9.8642C-0.11673 9.38692 -0.11673 8.61308 0.350183 8.1358L7.95897 0.357963C8.42589 -0.119322 9.1829 -0.119322 9.64982 0.357964C10.1167 0.835251 10.1167 1.60909 9.64982 2.08637L2.88645 9L9.64982 15.9136C10.1167 16.3909 10.1167 17.1647 9.64982 17.642C9.1829 18.1193 8.42589 18.1193 7.95897 17.642Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <button class="progress__button__next progress__button__next__seven">
+                                    <span>Просмотреть подборку</span>
+                                    <svg class="next__arrow" width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.9922 17.7016L10.601 9.92377C11.0679 9.44649 11.0679 8.67265 10.601 8.19537L2.9922 0.417534C2.52528 -0.0597516 1.76827 -0.0597516 1.30136 0.417534C0.834442 0.894821 0.834442 1.66866 1.30136 2.14594L8.06473 9.05957L1.30136 15.9732C0.834443 16.4505 0.834443 17.2243 1.30136 17.7016C1.76827 18.1789 2.52529 18.1789 2.9922 17.7016Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide__wrapper last__slide">
+                        <div class="last__slide__info">
+                            <h2 class="last__slide__title">Спасибо за уделенное время! Мы подберем лучшую недвижимость по результатам тестирования и свяжемся с вами!</h2>
+                            <p class="last__slide__description">Выберите мессенджер для связи:</p>
+                            <div class="last__slide__button">
+                                <button class="button__telegram">telegram</button>
+                                <button class="button__whatsap">whats app</button>
+                            </div>
+                        </div>
+                        <svg class="label" width="1512" height="122" viewBox="0 0 1512 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M211.347 213.845H179.569H163.725H132.857V128.61H46.7122V213.845H0V1.51663H46.7122V85.5379H132.857V1.51663H179.569V176.611L254.723 0H297.795L388.793 213.845H339.957L320.544 166.223H230.76L211.347 213.845ZM275.652 56.1153L247.443 124.97H303.861L275.652 56.1153ZM399.314 213.845H446.027V129.217L508.154 31.9842V213.845H554.866V148.933L579.435 123.454L645.257 213.845H701.372L610.981 91.6044L697.429 1.51663H641.011L554.866 94.3344V1.51663H527.621H508.154H474.539L422.974 86.7512L372.318 1.51663H317.72L399.314 130.127V213.845ZM1254.49 213.845H1302.12L1321.53 166.223H1411.31L1430.73 213.845H1465.92H1479.56H1512.64V1.51663H1465.92V181.796L1388.56 0H1345.49L1282.44 148.165C1280.02 123.983 1265.44 111.392 1243.06 102.827C1258.23 94.3344 1270.97 80.988 1270.97 57.0253C1270.97 41.859 1266.12 30.0293 1256.41 20.3228C1244.28 8.1898 1225.17 1.51663 1200.9 1.51663H1103.27H1102.32H1056.56V123.15C1056.56 156.819 1039.27 174.109 1010.76 174.109C982.246 174.109 964.957 156.213 964.957 121.634V1.51663H918.245V61.1714C901.112 25.2978 863.736 1.51663 815.652 1.51663H732.844V213.845H815.652C866.006 213.845 904.615 187.421 920.534 148.777C929.152 194.131 961.64 217.181 1010.15 217.181C1061.79 217.181 1096.27 191.311 1102.32 138.67V213.845H1203.33C1227.01 213.845 1246.69 209.105 1260.54 199.626L1254.49 213.845ZM1338.21 124.97L1366.42 56.1153L1394.63 124.97H1338.21ZM779.556 171.682V43.6789H815.652C853.871 43.6789 879.654 70.0683 879.654 107.681C879.654 145.9 853.871 171.682 815.652 171.682H779.556ZM1147.82 42.4656V87.3579H1190.89C1211.52 87.3579 1224.56 80.6847 1224.56 64.3051C1224.56 50.3521 1213.64 42.4656 1193.93 42.4656H1147.82ZM1147.82 126.184V172.896H1203.33C1223.95 172.896 1236.39 165.616 1236.39 149.236C1236.39 134.98 1225.77 126.184 1201.81 126.184H1147.82Z" fill="url(#paint0_linear_119_684)" fill-opacity="0.1"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M211.347 213.845H179.569H163.725H132.857V128.61H46.7122V213.845H0V1.51663H46.7122V85.5379H132.857V1.51663H179.569V176.611L254.723 0H297.795L388.793 213.845H339.957L320.544 166.223H230.76L211.347 213.845ZM275.652 56.1153L247.443 124.97H303.861L275.652 56.1153ZM399.314 213.845H446.027V129.217L508.154 31.9842V213.845H554.866V148.933L579.435 123.454L645.257 213.845H701.372L610.981 91.6044L697.429 1.51663H641.011L554.866 94.3344V1.51663H527.621H508.154H474.539L422.974 86.7512L372.318 1.51663H317.72L399.314 130.127V213.845ZM1254.49 213.845H1302.12L1321.53 166.223H1411.31L1430.73 213.845H1465.92H1479.56H1512.64V1.51663H1465.92V181.796L1388.56 0H1345.49L1282.44 148.165C1280.02 123.983 1265.44 111.392 1243.06 102.827C1258.23 94.3344 1270.97 80.988 1270.97 57.0253C1270.97 41.859 1266.12 30.0293 1256.41 20.3228C1244.28 8.1898 1225.17 1.51663 1200.9 1.51663H1103.27H1102.32H1056.56V123.15C1056.56 156.819 1039.27 174.109 1010.76 174.109C982.246 174.109 964.957 156.213 964.957 121.634V1.51663H918.245V61.1714C901.112 25.2978 863.736 1.51663 815.652 1.51663H732.844V213.845H815.652C866.006 213.845 904.615 187.421 920.534 148.777C929.152 194.131 961.64 217.181 1010.15 217.181C1061.79 217.181 1096.27 191.311 1102.32 138.67V213.845H1203.33C1227.01 213.845 1246.69 209.105 1260.54 199.626L1254.49 213.845ZM1338.21 124.97L1366.42 56.1153L1394.63 124.97H1338.21ZM779.556 171.682V43.6789H815.652C853.871 43.6789 879.654 70.0683 879.654 107.681C879.654 145.9 853.871 171.682 815.652 171.682H779.556ZM1147.82 42.4656V87.3579H1190.89C1211.52 87.3579 1224.56 80.6847 1224.56 64.3051C1224.56 50.3521 1213.64 42.4656 1193.93 42.4656H1147.82ZM1147.82 126.184V172.896H1203.33C1223.95 172.896 1236.39 165.616 1236.39 149.236C1236.39 134.98 1225.77 126.184 1201.81 126.184H1147.82Z" fill="white"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_119_684" x1="0" y1="110.212" x2="1512.64" y2="110.212" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E9C88F"/>
+                            <stop offset="1" stop-color="#E9AF8F"/>
+                            </linearGradient>
+                            </defs>
+                        </svg> 
+                        <picture>
+                            <img class="last__slide__img1" src="img/survey/last__slide__img1.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img class="last__slide__img2" src="img/survey/last__slide__img2.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img class="last__slide__img3" src="img/survey/last__slide__img3.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img class="last__slide__img4" src="img/survey/last__slide__img4.jpg" alt="">
+                        </picture>
                     </div>
                   </div>
                 </div>
@@ -994,16 +1305,16 @@
         </div>
     </footer>
     <div class="overlay"></div>
-    <div class="modal__window__consultation">
+    <form  action="" class="modal__window__consultation">
         <h2 class="consultation__title">Обратный звонок</h2>
         <p class="consultation__description">Оставьте ваши контактные данные и наш менеджер с вами свяжется</p>
-        <input class="consultation__input input__name" type="text" placeholder="Введите ваше имя">
-        <input class="consultation__input input__tel" type="tel" placeholder="(___) ___ - __ - __">
+        <input  name="Name" class="consultation__input input__name" type="text" placeholder="Введите ваше имя">
+        <input  name="Telephone" class="consultation__input input__tel" type="tel" placeholder="Введите ваш номер телефона">
         <button class="consultation__send">оставить заявку</button>
         <button class="close__consultation__modal">
             <div class="line"></div>
         </button>
-    </div>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
     <script src="./index.js"></script>

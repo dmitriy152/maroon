@@ -55,7 +55,8 @@ for(let i = 0; i < openConsultation.length; i++){
     })
 }
 
-closeConsultationWindow = function (){
+closeConsultationWindow = function (e){
+    e.preventDefault()
     overlay.classList.remove("overlay-active")
     modalConsultation.classList.remove("modal__window__consultation-active")
     consultationInputName.value = ""
@@ -83,29 +84,131 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     loop: true,
+    allowTouchMove: false,
     keyboard: {
         enabled: true,
         onlyInViewport: false,
     },
   });
+  let swiper1 = document.querySelector(".mySwiper")
+  let imageMax = document.querySelector(".image__max")
+  let cards = swiper1.querySelectorAll(".card__photo")
+  for(let i = 0; i < cards.length; i++){
+    cards[i].addEventListener("click", function(){
+        url = this.src
+        if(imageMax.src == url){
+            imageMax.classList.remove("image__max-active")
+            imageMax.src = ""
+        }
+        else {
+            imageMax.src=url
+            imageMax.classList.add("image__max-active")
+        }
+        swiper1.querySelector(".swiper-button-next").addEventListener("click", function(){
+            imageMax.classList.remove("image__max-active")
+            imageMax.src = ""
+        })
+        swiper1.querySelector(".swiper-button-prev").addEventListener("click", function(){
+            imageMax.classList.remove("image__max-active")
+            imageMax.src = ""
+        })
+    })
+    imageMax.addEventListener("click", function(){
+        imageMax.src=""
+        imageMax.classList.remove("image__max-active")
+    })
+  }
+  let loft = [
+    "img/catalog/card__photo__1.png",
+    "img/catalog/card__photo__2.png",
+    "img/catalog/card__photo__3.png"
+  ]
+  let modern = [
+    "img/catalog/card__photo__4.png",
+    "img/catalog/card__photo__5.png",
+    "img/catalog/card__photo__6.png"
+  ]
+  let minimalism = [
+    "img/catalog/card__photo__7.png",
+    "img/catalog/card__photo__8.png",
+    "img/catalog/card__photo__9.png"
+  ]
+
+  let modalMore = swiper1.querySelector(".modal__card__more")
+  let modalMoreMainImage = modalMore.querySelector(".card__image_max")
+  let modalMoreMinImage = modalMore.querySelectorAll(".card__image_min")
+  let closeModalMore = modalMore.querySelector(".close__modal__more")
+  let buttonMore = swiper1.querySelectorAll(".price__more")
+  
+  for(let i = 0; i < buttonMore.length; i++){
+    buttonMore[i].addEventListener("click", function(){
+        imageMax.classList.remove("image__max-active")
+        imageMax.src = ""
+        modalMore.classList.add("modal__card__more-active")
+        let selectCatalogCard = buttonMore[i].parentElement.parentElement.parentElement
+        modalMoreMainImage.src = selectCatalogCard.querySelector(".card__photo").src
+        if (selectCatalogCard.classList.contains("loft")){
+            modalMoreMinImage[0].src = loft[0]
+            modalMoreMinImage[1].src = loft[1]
+            modalMoreMinImage[2].src = loft[2]
+        }
+        else if (selectCatalogCard.classList.contains("modern")){
+            modalMoreMinImage[0].src = modern[0]
+            modalMoreMinImage[1].src = modern[1]
+            modalMoreMinImage[2].src = modern[2]
+        }
+        else if (selectCatalogCard.classList.contains("minimalism")){
+            modalMoreMinImage[0].src = minimalism[0]
+            modalMoreMinImage[1].src = minimalism[1]
+            modalMoreMinImage[2].src = minimalism[2]
+        }
+    })
+  }
+    for(let k = 0; k < modalMoreMinImage.length; k++){
+        modalMoreMinImage[k].addEventListener("click", function(){
+            modalMoreMainImage.src = modalMoreMinImage[k].src
+        })
+    }
+  
+  closeModalCatalog = () => {
+    imageMax.classList.remove("image__max-active")
+    imageMax.src = ""
+    modalMore.classList.remove("modal__card__more-active")
+  }
+  closeModalMore.addEventListener("click", function(){
+    closeModalCatalog()
+  })
+  swiper1.querySelector(".swiper-button-prev").addEventListener("click", function(){ 
+    closeModalCatalog()
+  })
+  swiper1.querySelector(".swiper-button-next").addEventListener("click", function(){ 
+    closeModalCatalog()
+  })
   var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    allowTouchMove: false,
+    noSwiping: true,
     keyboard: {
         enabled: true,
-        onlyInViewport: false,
-        allowTouchMove: false,
-        noSwiping: true,
-        preventInteractionOnTransition: true,
     },
   });
 
-  document.querySelector(".slide__one__next").addEventListener("click",function(){
+  document.querySelector(".slide__main__next").addEventListener("click",function(){
     swiper2.slideNext()
   })
 
   let nextBtn = document.querySelectorAll(".progress__button__next")
   for(let i = 0; i < nextBtn.length; i++){
     nextBtn[i].addEventListener("click", function(){
-        swiper2.slideNext()
+        let activeSlide = document.querySelector(".mySwiper2").querySelector(".swiper-slide-active")
+        let checkboxCounter = activeSlide.querySelectorAll('input[type="radio"]:checked').length
+        console.log(checkboxCounter)
+        if (checkboxCounter >= 1){
+            swiper2.slideNext()
+        }
+        else {
+            alert("Выберите хотя бы один вариант ответа");
+        }
     })
   }
   let prevtBtn = document.querySelectorAll(".progress__button__prev")
