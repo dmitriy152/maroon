@@ -234,7 +234,7 @@ var swiper = new Swiper(".mySwiper", {
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__partners")){
-            let scrollElem =  document.querySelector(".partners").offsetTop - headerHeight
+            let scrollElem =  document.querySelector(".partners").offsetTop - (headerHeight/2)
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__catalog")){
