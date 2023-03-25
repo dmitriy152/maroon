@@ -238,7 +238,7 @@ var swiper = new Swiper(".mySwiper", {
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__catalog")){
-            let scrollElem =  document.querySelector(".catalog__slider").offsetTop - headerHeight
+            let scrollElem =  document.querySelector(".catalog__slider").offsetTop
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__cryptocurrency")){
