@@ -210,7 +210,6 @@ var swiper = new Swiper(".mySwiper", {
     nextBtn[i].addEventListener("click", () => {
         let activeSlide = document.querySelector(".mySwiper2").querySelector(".swiper-slide-active")
         let checkboxCounter = activeSlide.querySelectorAll('input[type="radio"]:checked').length
-        console.log(checkboxCounter)
         if (checkboxCounter >= 1){
             swiper2.slideNext()
         }
