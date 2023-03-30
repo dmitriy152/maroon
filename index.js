@@ -76,7 +76,12 @@ window.addEventListener("scroll", () => {
         journal.classList.add("journal-animation")
     }
 })
-
+let property = document.querySelector(".buy__property")
+window.addEventListener("scroll", () => {
+    if(window.scrollY > property.offsetTop - 300){
+        document.querySelector(".property__house").classList.add("property__house-animation")
+    }
+})
 let downoalCatalog = document.querySelectorAll(".catalog__download")
 for (let i = 0; i < downoalCatalog.length; i++){
     downoalCatalog[i].addEventListener("click", (e)=>{
@@ -204,7 +209,19 @@ var swiper = new Swiper(".mySwiper", {
   document.querySelector(".slide__main__next").addEventListener("click",() => {
     swiper2.slideNext()
   })
-
+  let swiperSurvey = document.querySelector(".mySwiper2")
+  let checkboxSurvey = swiperSurvey.querySelectorAll(".checkbox__radio input")
+  for(let i = 0; i < checkboxSurvey.length; i++){
+    checkboxSurvey[i].addEventListener("click", () => {
+      if (checkboxSurvey[i].hasAttribute("checked")){
+        checkboxSurvey[i].checked = false
+        checkboxSurvey[i].removeAttribute("checked")
+      }
+      else {
+        checkboxSurvey[i].setAttribute("checked", "")
+      }
+    })
+  }
   let nextBtn = document.querySelectorAll(".progress__button__next")
   for(let i = 0; i < nextBtn.length; i++){
     nextBtn[i].addEventListener("click", () => {
@@ -234,25 +251,33 @@ var swiper = new Swiper(".mySwiper", {
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__partners")){
-            let scrollElem =  document.querySelector(".partners").offsetTop - (headerHeight/2)
+            let scrollElem =  document.querySelector(".partners").offsetTop + (headerHeight/4)
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__catalog")){
-            let scrollElem =  document.querySelector(".catalog__slider").offsetTop
+            let scrollElem =  document.querySelector(".catalog__slider").offsetTop + (headerHeight/4)
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__cryptocurrency")){
-            let scrollElem =  document.querySelector(".cryptocurrency").offsetTop - headerHeight
+            let scrollElem =  document.querySelector(".cryptocurrency").offsetTop - (headerHeight/4)
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
         else if (navItem[i].classList.contains("item__journal")){
             let scrollElem =  document.querySelector(".journal").offsetTop - headerHeight
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
-        else if (navItem[i].classList.contains("item__telegram")){
-            let scrollElem =  document.querySelector(".telegram__cover").offsetTop - headerHeight
+        else if (navItem[i].classList.contains("item__blog")){
+            let scrollElem =  document.querySelector(".blog").offsetTop - (headerHeight*1.5)
             window.scrollTo({ top: scrollElem, behavior: 'smooth'});
         }
+        else if (navItem[i].classList.contains("item__about__us")){
+          let scrollElem =  document.querySelector(".about__us").offsetTop - (headerHeight*1.5)
+          window.scrollTo({ top: scrollElem, behavior: 'smooth'});
+      }
+        else if (navItem[i].classList.contains("item__account__opening")){
+          let scrollElem =  document.querySelector(".account__opening").offsetTop - headerHeight
+          window.scrollTo({ top: scrollElem, behavior: 'smooth'});
+      }
     })
   }
 
@@ -262,8 +287,41 @@ var swiper = new Swiper(".mySwiper", {
     window.scrollTo({ top: scrollElem, behavior: 'smooth'});
   })
 
+  let propertyButton = document.querySelector(".property__button")
+  propertyButton.addEventListener("click", () => {
+    let scrollElem =  document.querySelector(".catalog__slider").offsetTop + (headerHeight/4)
+    window.scrollTo({ top: scrollElem, behavior: 'smooth'});
+  })
+
   let privacyPolicy = document.querySelector(".footer__privacy")
   privacyPolicy.addEventListener("click", (e) => {
     e.preventDefault()
     window.open('privacy_policy.rtf')
   })
+  var swiperBlog = new Swiper(".mySwiper__blog", {
+    loop: true,
+    allowTouchMove: false,
+  });
+  let nextBtnBlog = document.querySelector(".next__slide__blog")
+  let prevBtnBlog = document.querySelector(".prev__slide__blog")
+  prevBtnBlog.addEventListener("click", () => {
+    swiperBlog.slidePrev()
+  })
+  nextBtnBlog.addEventListener("click", () => {
+    swiperBlog.slideNext()
+  })
+
+  let blogMediaLink = document.querySelectorAll(".blog__media")
+  for(let i = 0; i < blogMediaLink.length; i++){
+    blogMediaLink[i].addEventListener("click", (e) => {
+        e.preventDefault()
+        blogMediaLink[i].innerHTML = '<iframe class="iframe__blog" width="1280" height="720" src="https://www.youtube.com/embed/HS6Y8aw3_5U" title="Бежевый интерьер - 8 простых решений. Как декорировать, цветовые сочетания." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    })
+  }
+  
+
+  let aboutUsItem = document.querySelectorAll(".about__us__card__item")
+  for (let i = 0; i < aboutUsItem.length; i++){
+    counter = i + 1
+    aboutUsItem[i].querySelector(".item__title__counter").textContent = "0" + counter + ". "
+  }
