@@ -55,7 +55,7 @@ for(let i = 0; i < openConsultation.length; i++){
     })
 }
 
-closeConsultationWindow = (e) => {
+function closeConsultationWindow (e) {
     e.preventDefault()
     overlay.classList.remove("overlay-active")
     modalConsultation.classList.remove("modal__window__consultation-active")
@@ -183,7 +183,7 @@ var swiper = new Swiper(".mySwiper", {
         })
     }
   
-  closeModalCatalog = () => {
+  function closeModalCatalog () {
     imageMax.classList.remove("image__max-active")
     imageMax.src = ""
     modalMore.classList.remove("modal__card__more-active")

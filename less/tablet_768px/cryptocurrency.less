@@ -1,0 +1,111 @@
+.cryptocurrency {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 56.22vw;
+    padding: 6.02vw 12.10vw 7.21vw 12.10vw;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/cryptocurrency/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .cryptocurrency__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 38.89vw;
+    }
+    .cryptocurrency__title {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.17vw;
+        line-height: 4.50vw;
+        color: #313131;
+        margin: 0px 0px 2.45vw 0px;
+    }
+    .cryptocurrency__list {
+        margin: 0px 0px 3.90vw 0px;
+        padding: 0px 0px 0px 2.18vw;
+        list-style-type: none; 
+	    counter-reset: num;
+    }
+    .cryptocurrency__list__item {
+        position: relative;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.06vw;
+        line-height: 1.72vw;
+        color: #313131;
+    }
+    .cryptocurrency__list__item::before {
+        content:'0' counter(num) '.'; 
+	    counter-increment: num;
+        display: inline-block;	
+        position: absolute;
+        top: -0.73vw;
+        left: -2.18vw;
+        width: 1.32vw;    
+        color: #E9AF8F;
+        text-align: right;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.32vw;
+        line-height: 3.04vw;
+    }
+    .cryptocurrency__list__item:not(.cryptocurrency__list__item:last-child) {
+        margin: 0px 0px 1.32vw 0px;
+    }
+    .lighter {
+        font-weight: 400;
+    }
+    .cryptocurrency__description {
+        margin: 0px 0px 1.92vw 0px;
+        padding: 1.52vw;
+        box-sizing: border-box;
+        width: 38.89vw;
+        background: linear-gradient(90deg, #E9C88F 0%, #E9AF8F 100%);
+        border-radius: 0.33vw;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.32vw;
+        line-height: 1.85vw;
+        border: none;
+        color: #fff;
+    }
+    .cryptocurrency__steps {
+        display: flex;
+        justify-content: space-between;
+        width: 38.89vw;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    .steps__item {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .steps__item__title {
+        margin: 0px 0px 0.13vw 0px;
+        padding: 0px;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.32vw;
+        line-height: 3.04vw;
+        color: #E9AF8F;
+    }
+    .steps__item__description {
+        margin: 0px;
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.06vw;
+        line-height: 1.72vw;
+        color: #313131;
+        width: 19.44vw;
+    }
+}

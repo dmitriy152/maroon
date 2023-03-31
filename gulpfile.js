@@ -1,9 +1,15 @@
+
 const gulp = require('gulp');
 const less = require('gulp-less');
+var path = require('path');
+const sourcemaps=require('gulp-sourcemaps')
+const concat=require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const minifyCSS = require('gulp-minify-css');
 var postcss = require('gulp-postcss');
 var pxtoviewport = require('postcss-px-to-viewport-8-plugin');
+
+
 
 gulp.task('less', function () {
   var processors = [
@@ -12,14 +18,18 @@ gulp.task('less', function () {
         viewportUnit: 'vw'
     })
 ];
-  return gulp.src('less/*.less')
-    .pipe(less())
+  return gulp.src(`less/**/*.less`)
+    .pipe(sourcemaps.init())
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
     .pipe(autoprefixer({
       overrideBrowserslist:  ['last 2 versions'],
       cascade: false
   }))
-    .pipe(minifyCSS())
     .pipe(postcss(processors))
+    .pipe(minifyCSS())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('css'));
 });
   
@@ -29,35 +39,3 @@ gulp.task('watch', function () {
 
 gulp.task('default', gulp.series('less', 'watch'));
 
-/*
-const minify = require('gulp-minify');
-
-gulp.task('compress', function() {
-  gulp.src('index.js')
-    .pipe(minify({
-        ext:{
-            src:'-debug.js',
-            min:'.js'
-        },
-        exclude: ['tasks'],
-        ignoreFiles: ['.combo.js', '-min.js']
-    }))
-    .pipe(gulp.dest('docs'))
-});
-gulp.task('default', gulp.series('compress', 'watch'));
-*/
-/*
-var htmlmin = require('gulp-htmlmin');
-
-gulp.task('minify', function() {
-  return gulp.src('index.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('docs'))
-});
-
-gulp.task('watch', function() {
-  gulp.watch('index.html', ['minify']);
-});
-
-gulp.task('default', gulp.series('minify', 'watch'));
-*/

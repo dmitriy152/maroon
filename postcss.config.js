@@ -1,7 +1,7 @@
 module.exports = {
     plugins: {
       'postcss-px-to-viewport-8-plugin': {
-        viewportWidth: 1512,
+        viewportWidth: 768,
         exclude: [/node_modules/],
         unitToConvert: 'px',
         unitPrecision: 5,
@@ -10,10 +10,9 @@ module.exports = {
         fontViewportUnit: 'vw',
         selectorBlackList: [],
         minPixelValue: 1,
-        mediaQuery: true,
+        mediaQuery: false,
         replace: true,
-        exclude: [],
-        landscape: false,
+        landscape: true,
         landscapeUnit: 'vw',
         landscapeWidth: 568
       }
