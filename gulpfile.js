@@ -9,16 +9,17 @@ const minifyCSS = require('gulp-minify-css');
 var postcss = require('gulp-postcss');
 var pxtoviewport = require('postcss-px-to-viewport-8-plugin');
 
-
+import {folder} from "./index.js"
+import {viewportBody} from "./index.js"
 
 gulp.task('less', function () {
   var processors = [
     pxtoviewport({
-        viewportWidth: 1512,
+        viewportWidth: viewportBody,
         viewportUnit: 'vw'
     })
 ];
-  return gulp.src(`less/**/*.less`)
+  return gulp.src(`less/${folder}/*.less`)
     .pipe(sourcemaps.init())
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
