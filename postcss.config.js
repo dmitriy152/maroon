@@ -4,7 +4,7 @@ module.exports = {
         viewportWidth: 768,
         exclude: [/node_modules/],
         unitToConvert: 'px',
-        unitPrecision: 5,
+        unitPrecision: 2,
         propList: ['*'],
         viewportUnit: 'vw',
         fontViewportUnit: 'vw',

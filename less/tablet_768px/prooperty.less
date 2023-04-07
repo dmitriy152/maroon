@@ -1,21 +1,25 @@
 .buy__property {
     background-color: #FFFFFF;
-    padding: 0px 70px 133px 70px;
-    overflow: hidden;
+    padding: 0px 0px 173px 0px;
+    overflow-x: hidden;
     max-width: 100%;
     box-sizing: border-box;
     .buy__property__wrapper {
+        display: flex;
+        flex-direction: column;
         box-sizing: border-box;
         position: relative;
         background-image: url("../img/property/bg.jpg");
-        width: 1372px;
-        height: 690px;
-        padding: 111px 573px 123px 113px;
+        width: 768px;
+        height: 1035px;
+        padding: 100px 188px 399px 84px;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50% 50%;
     }
     .property__title {
-        margin: 0px 0px 39px 0px;
+        width: 496px;
+        margin: 0px 0px 30px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
@@ -24,26 +28,27 @@
         color: #313131;
     }
     .property__description {
-        width: 606px;
+        width: 496px;
         font-family: 'Evolventa';
+        font-style: normal;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
         color: #313131;
-        margin: 0px 0px 65px 0px;
+        margin: 0px 0px 50px 0px;
     }
     .bold {
         font-weight: 500;
     }
     .property__button {
-        padding: 22px 62px;
+        padding: 25px 66px;
         margin: 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 20px;
+        line-height: 27px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -66,25 +71,10 @@
     }
     .property__house {
         position: absolute;
-        top: -454px;
-        right: -97px;
-        width: 670px;
-        height: 454px;
+        bottom: -63px;
+        right: 84px;
+        width: 600px;
+        height: 406px;
         object-fit: cover;
-    }
-    .property__house-animation {
-        animation: fluidDrop 1.2s forwards;
-    }
-    
-    @keyframes fluidDrop {
-        from {
-            top: -454px;
-        }
-        90% {
-            top: 173px;
-        }
-        to {
-            top: 167px;
-        }
     }
 }

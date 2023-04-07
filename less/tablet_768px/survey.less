@@ -1,15 +1,15 @@
 .survey {
-    display: none;
     overflow: hidden;
-    width: 100vw;
-    height: 54.76vw;
+    width: 768px;
+    height: 900px;
     background-color: #fff;
     .swiper-slide {
-        width: 100vw;
-        height: 54.76vw;
+        width: 768px;
+        height: 900px;
         background-image: url("../img/survey/bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
     }
     .slide__wrapper {
         position: relative;
@@ -22,9 +22,10 @@
     }
     .slide__main__info {
         box-sizing: border-box;
-        padding: 85px 128px 181px 183px;
+        padding: 99px 84px 155px 84px;
     }
     .slide__main__title {
+        width: 474px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
@@ -34,22 +35,23 @@
         margin: 0px 0px 34px 0px;
     }
     .slide__main__description {
+        width: 490px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
         color: #313131;
-        margin: 0px 0px 37px 0px;
+        margin: 0px 0px 45px 0px;
     }
     .bold {
         font-weight: 600;
     }
     .slide__main__sale {
         box-sizing: border-box;
-        width: 362px;
-        padding: 5px 10px 5px 10px;
-        margin: 0px 0px 37px 0px;
+        width: 496px;
+        padding: 7px 55px 7px 14px;
+        margin: 0px 0px 43px 0px;
         display: flex;
         align-items: center;
         background: rgba(255, 255, 255, 0.3);
@@ -57,20 +59,20 @@
         border-radius: 5px;
     }
     .sale__gift {
-        width: 139px;
-        height: 139px;
+        width: 190.45px;
+        height: 190.45px;
     }
     .sale__subtitle {
-        width: 179px;
+        width: 245.26px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 26px;
+        font-size: 18px;
+        line-height: 36px;
         text-transform: uppercase;
     }
     .slide__main__next {
-        padding: 22px 135px;
+        padding: 25px 153px;
         border: none;
         background: linear-gradient(90deg, #E9C88F 0%, #E9AF8F 100%);
         box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15);
@@ -78,8 +80,8 @@
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 27px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -94,21 +96,23 @@
         margin: 0px 0px 0px 5px;
     }
     .label {
-        width: 100vw;
-        height: 122px;
+        width: 1147.36px;
+        height: 164.74px;
         position: absolute;
-        bottom: 0px;
-        left: 0px;
+        bottom: -50px;
+        left: 50%;
         z-index: 10;
+        transform: translateX(-50%);
     }
     .main__image {
+        display: none;
         width: 741px;
         height: 828px;
         object-fit: cover;
     }
     .slide__one {
         box-sizing: border-box;
-        padding: 75px 183px 84px 183px;
+        padding: 99px 84px 155px 84px;
         flex-direction: column;
         justify-content: flex-start;
         --SlideNumber: 1;
@@ -118,18 +122,18 @@
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
-        width: 900px;
     }
     .target {
         display: flex;
         justify-content: space-between;
-        margin: 0px 0px 46px 0px;
+        margin: 0px 0px 30px 0px;
     }
     .target__card {
-        padding: 17px 17px 28px 17px;
+        width: 260px;
+        padding: 10px 10px 20px 10px;
         background: rgba(255, 255, 255, 0.3);
         border: 3px solid rgba(255, 255, 255, 0.3);
         border-radius: 5px;
@@ -142,8 +146,8 @@
         }
     }
     .target__card__img {
-        width: 524px;
-        height: 300px;
+        width: 263px;
+        height: 150px;
         object-fit: cover;
         margin: 0px 0px 23px 0px;
         border-radius: 5px;
@@ -176,7 +180,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
-            line-height: 32px;
+            line-height: 24px;
             color: #313131;
 
         }
@@ -185,9 +189,13 @@
         background: rgba(255, 255, 255, 0.8);
     }
     .progress {
+        width: 600px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: absolute;
+        bottom: 155px;
+        left: 84px;
     }
     .progress__line {
         display: flex;
@@ -201,7 +209,7 @@
         font-size: 16px;
         line-height: 50px;
         color: #FFFFFF;
-        margin: 0px 0px 12px 0px;
+        margin: 0px;
     }
     .progress__bold {
         margin: 0px 6px 0px 0px;
@@ -219,19 +227,7 @@
         margin: 6px 0px 0px 0px;
     }
     .line {
-        position: relative;
-        width: 686px;
-        height: 2px;
-        background-color: rgba(255, 255, 255, 0.5);;
-    }
-    .line::after {
-        position: absolute;
-        content: "";
-        left: 0px;
-        bottom: 0px;
-        width: calc(var(--SlideNumber)*98px);
-        height: 4px;
-        background-color: #FFFFFF;
+        display: none;
     }
     .progress__button {
         display: flex;
@@ -272,39 +268,51 @@
     }
     .slide__two {
         box-sizing: border-box;
-        padding: 75px 183px 84px 183px;
+        padding: 99px 84px 155px 84px;
         flex-direction: column;
         justify-content: flex-start;
         --SlideNumber: 2;
     }
     .target__two {
         margin: 0px 0px 46px 0px;
+        .target__card:nth-child(n+1):nth-child(-n+2){
+            margin-bottom: 16px;
+        }
     }
     .slide__two__title {
-        width: 600px;
+        margin: 0px 0px 24px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
     }
+    .target__card__img__slide2 {
+        width: 260px;
+        height: 140px;
+        object-fit: cover;
+    }
+    .target__two {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px 0px 46px 0px;
+    }
     .slide__three {
         box-sizing: border-box;
-        padding: 75px 183px 84px 183px;
+        padding: 99px 84px 155px 84px;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: flex-start;
         --SlideNumber: 3;
     }
-    .target__three {
-        margin: 0px 0px 46px 0px;
-    }
     .slide__three__title {
-        width: 600px;
+        margin: 0px 0px 24px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
     }
@@ -319,8 +327,8 @@
     .checkbox__three {
         box-sizing: border-box;
         margin: 0px 0px 23px 0px;
-        padding: 25px 32px;
-        width: 558px;
+        padding: 12px 10px;
+        width: 280px;
         background: rgba(255, 255, 255, 0.3);
         border: 3px solid rgba(255, 255, 255, 0.3);
         border-radius: 5px;
@@ -330,7 +338,7 @@
     }
     .slide__four {
         box-sizing: border-box;
-        padding: 75px 183px 84px 183px;
+        padding: 99px 84px 155px 84px;
         flex-direction: column;
         justify-content: flex-start;
         --SlideNumber: 4;
@@ -339,19 +347,19 @@
         margin: 0px 0px 46px 0px;
     }
     .slide__four__title {
-        width: 600px;
+        margin: 0px 0px 24px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
     }
     .checkbox__four {
         box-sizing: border-box;
         margin: 0px 0px 23px 0px;
-        padding: 25px 32px;
-        width: 558px;
+        padding: 12px 10px;
+        width: 280px;
         background: rgba(255, 255, 255, 0.3);
         border: 3px solid rgba(255, 255, 255, 0.3);
         border-radius: 5px;
@@ -361,7 +369,7 @@
     }
     .slide__five {
         box-sizing: border-box;
-        padding: 75px 183px 84px 183px;
+        padding: 99px 84px 155px 84px;
         flex-direction: column;
         justify-content: flex-start;
         --SlideNumber: 5;
@@ -370,11 +378,11 @@
         margin: 0px 0px 46px 0px;
     }
     .slide__five__title {
-        width: 600px;
+        margin: 0px 0px 24px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
     }
@@ -384,8 +392,8 @@
     .checkbox__five {
         box-sizing: border-box;
         margin: 0px 0px 23px 0px;
-        padding: 25px 32px;
-        width: 558px;
+        padding: 12px 10px;
+        width: 280px;
         background: rgba(255, 255, 255, 0.3);
         border: 3px solid rgba(255, 255, 255, 0.3);
         border-radius: 5px;
@@ -395,7 +403,7 @@
     }
     .slide__six {
         box-sizing: border-box;
-        padding: 75px 183px 84px 183px;
+        padding: 99px 84px 155px 84px;
         flex-direction: column;
         justify-content: flex-start;
         --SlideNumber: 6;
@@ -404,11 +412,11 @@
         margin: 0px 0px 46px 0px;
     }
     .slide__six__title {
-        width: 800px;
+        margin: 0px 0px 24px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
     }
@@ -418,8 +426,8 @@
     .checkbox__six {
         box-sizing: border-box;
         margin: 0px 0px 23px 0px;
-        padding: 25px 32px;
-        width: 558px;
+        padding: 12px 10px;
+        width: 280px;
         background: rgba(255, 255, 255, 0.3);
         border: 3px solid rgba(255, 255, 255, 0.3);
         border-radius: 5px;
@@ -429,7 +437,7 @@
     }
     .slide__seven {
         box-sizing: border-box;
-        padding: 75px 183px 84px 183px;
+        padding: 99px 84px 155px 84px;
         flex-direction: column;
         justify-content: flex-start;
         --SlideNumber: 7;
@@ -438,11 +446,11 @@
         margin: 0px 0px 46px 0px;
     }
     .slide__seven__title {
-        width: 800px;
+        margin: 0px 0px 24px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
     }
@@ -452,8 +460,8 @@
     .checkbox__seven {
         box-sizing: border-box;
         margin: 0px 0px 23px 0px;
-        padding: 25px 32px;
-        width: 558px;
+        padding: 12px 10px;
+        width: 280px;
         background: rgba(255, 255, 255, 0.3);
         border: 3px solid rgba(255, 255, 255, 0.3);
         border-radius: 5px;
@@ -468,7 +476,7 @@
     }
     .last__slide {
         box-sizing: border-box;
-        padding: 159px 183px 217px 183px;
+        padding: 99px 84px 155px 84px;
         overflow: hidden;
     }
     .last__slide__info {
@@ -476,12 +484,11 @@
         z-index: 10;
     }
     .last__slide__title {
-        width: 558px;
-        margin: 0px 0px 67px 0px;
+        margin: 0px 0px 24px 0px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 50px;
         color: #313131;
     }
@@ -555,35 +562,26 @@
         opacity: 1;
     }
     .last__slide__img1 {
-        top: -24px;
-        right: 85px;
-        position: absolute;
-        object-fit: cover;
-        width: 558px;
-        height: 424px;
+       display: none;
     }
     .last__slide__img2 {
-        top: -24px;
-        right: -502px;
-        position: absolute;
-        object-fit: cover;
-        width: 558px;
-        height: 424px;
+        display: none;
     }
     .last__slide__img3 {
-        bottom: -24px;
-        right: 379px;
+        bottom: -10%;
+        right: -50%;
         position: absolute;
         object-fit: cover;
         width: 490px;
         height: 424px;
+        transform: translate(-50%, 0%);
     }
     .last__slide__img4 {
         bottom: -24px;
-        right: -141px;
+        right: 50%;
         position: absolute;
         object-fit: cover;
-        width: 490px;
-        height: 424px;
+        width: 245px;
+        height: 212px;
     }
 }

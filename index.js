@@ -1,3 +1,4 @@
+
 let buttonPopupOpen = document.querySelector(".menu__button")
 let popupMenu = document.querySelector(".header__popup")
 function popupHeader (){
@@ -204,6 +205,8 @@ var swiper = new Swiper(".mySwiper", {
     keyboard: {
         enabled: true,
     },
+    slidesPerView: 1,
+    initialSlide: 8,
   });
 
   document.querySelector(".slide__main__next").addEventListener("click",() => {
@@ -322,23 +325,7 @@ var swiper = new Swiper(".mySwiper", {
 
   let aboutUsItem = document.querySelectorAll(".about__us__card__item")
   for (let i = 0; i < aboutUsItem.length; i++){
-    counter = i + 1
+    let counter = i + 1
     aboutUsItem[i].querySelector(".item__title__counter").textContent = "0" + counter + ". "
   }
-  let folder = ""
-  let viewportBody = 0
-  if(window.matchMedia('screen and (min-width:320px) and (max-width:767px)').matches) {
-    folder = "mobile_320px"
-    viewportBody = 320
-  }
-  else if(window.matchMedia('screen and (min-width:767px) and (max-width:1511px)').matches) {
-    folder = "tablet_768px"
-    viewportBody = 768
-  }
-  else if (window.matchMedia('screen and (min-width:1512px)').matches){
-    folder = "desktope_1512px"
-    viewportBody = 1512
-  }
-
-  export  {folder}
-  export  {viewportBody}
+  

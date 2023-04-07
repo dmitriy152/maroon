@@ -3,41 +3,46 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px 183px 221px 183px;
+    padding: 0px 84px 148px 84px;
     .about__us__title {
-        width: 1000px;
+        width: 600px;
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
         font-size: 48px;
         line-height: 64px;
+        text-align: left;
         color: #313131;
-        margin: 0px 0px 69px 0px;
+        margin: 0px 0px 85px 0px;
 
     }
     .about__us__card {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0px 0px 80px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 0px 85px 0px;
         width: 100%;
         position: relative;
         picture {
-            width: 490px;
-            height: 490px;
+            width: 600px;
+            height: 350px;
+            margin: 0px 0px 61px 0px;
+        }
+        picture:last-child {
+            margin: 0px;
         }
     }
     .about__us__card:last-child {
         margin: 0px;
     }
     .about__us__card__image {
-        width: 490px;
-        height: 490px;
+        width: 600px;
+        height: 350px;
         object-fit: cover;
     }
     .about__us__card__image__hand {
-        width: 368px;
-        height: 529px;
+        width: 278px;
+        height: 399px;
         object-fit: cover;
         position: absolute;
         left: 61px;
@@ -46,13 +51,12 @@
     .picture__hand {
         position: absolute;
         left: 0px;
-        bottom: 0px;
+        bottom: 373px;
         background: rgba(247, 243, 239, 0.1);
         backdrop-filter: blur(5px);
         border-radius: 5px 300px 5px 5px;
     }
     .about__us__card:nth-child(odd){
-        flex-direction: row-reverse;
         .about__us__card__image {
             border-radius: 5px 300px 5px 5px;
             transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -64,13 +68,13 @@
         }
     }
     .about__us__card__List {
-        width: 530px;
+        width: 600px;
         padding: 0px;
         margin: 0px;
     }
     .about__us__card__item {
         list-style: none;
-        margin: 0px 0px 37px 0px;
+        margin: 0px 0px 40px 0px;
     }
     .about__us__card__item:last-child {
         margin: 0px;
@@ -79,7 +83,7 @@
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 30px;
         color: #313131;
         margin: 0px 0px 10px 0px;
@@ -92,7 +96,7 @@
         font-family: 'Evolventa';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         color: #313131;
     }
