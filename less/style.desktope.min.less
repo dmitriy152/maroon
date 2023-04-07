@@ -2205,20 +2205,37 @@
   margin: 0px 0.99vw 0px 1.12vw;
   width: 1.26vw;
   height: 1.26vw;
-  background-color: transparent;
+  background-color: #FFFFFF;
   border: 0.13vw solid #E9AF8F;
   position: relative;
 }
 .survey .checkbox__radio input::after {
   position: absolute;
   content: "";
-  width: 1.26vw;
-  height: 1.26vw;
-  top: -0.13vw;
-  left: -0.13vw;
+  width: 1.19vw;
+  height: 1.19vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #FFFFFF;
   border: 0.13vw solid #E9AF8F;
+  z-index: 1;
+}
+.survey .checkbox__radio input::before {
+  position: absolute;
+  content: "";
+  width: 0.73vw;
+  height: 0.73vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  z-index: 10;
+}
+.survey .checkbox__radio input:checked::before {
+  background: #E9AF8F;
 }
 .survey .checkbox__radio label {
   font-family: 'Evolventa';

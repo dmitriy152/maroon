@@ -206,7 +206,7 @@ var swiper = new Swiper(".mySwiper", {
         enabled: true,
     },
     slidesPerView: 1,
-    initialSlide: 8,
+    initialSlide: 2,
   });
 
   document.querySelector(".slide__main__next").addEventListener("click",() => {

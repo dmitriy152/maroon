@@ -155,20 +155,37 @@
             margin: 0px 15px 0px 17px;
             width: 19px;
             height: 19px;
-            background-color: transparent;
+            background-color: #FFFFFF;
             border: 2px solid #E9AF8F;
             position: relative;
         }
         input::after {
             position: absolute;
             content: "";
-            width: 19px;
-            height: 19px;
-            top: -2px;
-            left: -2px;
+            width: 18px;
+            height: 18px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
             border-radius: 50%;
-            background-color: transparent;
+            background-color: #FFFFFF;
             border: 2px solid #E9AF8F;
+            z-index: 1;
+        }
+        input::before {
+            position: absolute;
+            content: "";
+            width: 11px;
+            height: 11px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            background: transparent;
+            z-index: 10;
+        }
+        input:checked::before {
+            background: #E9AF8F;
         }
         label {
             font-family: 'Evolventa';
