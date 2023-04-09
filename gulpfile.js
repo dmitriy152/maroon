@@ -11,6 +11,22 @@ var newer = require('gulp-newer');
 var imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 
+gulp.task('mobile', function () {
+  gulp.series('less',)
+  var processors = [
+      pxtoviewport({
+          viewportWidth: 768,
+          viewportUnit: 'vw',
+          unitPrecision: 2,
+      })
+  ];
+
+  return gulp.src(['less/mobile_320px/*.less', '!less/mobile_320px/main.less'])
+      .pipe(less())
+      .pipe(postcss(processors))
+      .pipe(concat("style.mobile.min.less"))
+      .pipe(gulp.dest('less'));
+});
 gulp.task('tablet', function () {
   gulp.series('less',)
   var processors = [
@@ -70,6 +86,7 @@ gulp.task('webp', () =>
     .pipe(gulp.dest('img_webp'))
 );  
 gulp.task('watch', function () {
+  gulp.watch('less/mobile_320px/*.less', gulp.series('mobile',));
   gulp.watch('less/tablet_768px/*.less', gulp.series('tablet',));
   gulp.watch('less/desktope_1512px/*.less', gulp.series('desktope',));
   gulp.watch('less/*.less', gulp.series('less',));
@@ -77,5 +94,5 @@ gulp.task('watch', function () {
   gulp.watch("img/**", gulp.parallel('webp'));
 });
 
-gulp.task('default', gulp.series('tablet', 'desktope', 'less', ['images'], 'webp', 'watch'));
+gulp.task('default', gulp.series('mobile','tablet', 'desktope', 'less', ['images'], 'webp', 'watch'));
 
