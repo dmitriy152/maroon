@@ -10,6 +10,8 @@ var pxtoviewport = require('postcss-px-to-viewport-8-plugin');
 var newer = require('gulp-newer');
 var imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
+var rename = require("gulp-rename");
+var uglify = require('gulp-uglify-es').default;
 
 gulp.task('mobile', function () {
   gulp.series('less',)
@@ -72,6 +74,12 @@ gulp.task('less', function () {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('css'));
 });
+gulp.task("uglify", function () {
+	return gulp.src("index.js")
+		.pipe(rename("index.min.js"))
+		.pipe(uglify(/* options */))
+		.pipe(gulp.dest("js"));
+});
 gulp.task('images', function() {
   return gulp.src("img/**")
       .pipe(newer("img_min"))
@@ -90,6 +98,7 @@ gulp.task('watch', function () {
   gulp.watch('less/tablet_768px/*.less', gulp.series('tablet',));
   gulp.watch('less/desktope_1512px/*.less', gulp.series('desktope',));
   gulp.watch('less/*.less', gulp.series('less',));
+  gulp.watch('index.js', gulp.series('uglify',));
   gulp.watch("img/**", gulp.parallel('images'));
   gulp.watch("img/**", gulp.parallel('webp'));
 });
