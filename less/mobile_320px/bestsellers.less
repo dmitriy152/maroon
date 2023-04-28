@@ -1,0 +1,103 @@
+.bestsellers {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px 160px 50px;
+    position: relative;
+    .swiper, .swiper-wrapper {
+        max-width: 100%;
+    }
+    .bestsellers__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bestsellers__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 130%;
+        text-align: center;
+        color: #122947;
+        margin: 0px 0px 25px 0px;
+    }
+    .bestsellers__description {
+        width: 190px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #122947;
+        margin: 0px 0px 50px 0px;
+    }
+    .bestsellers__button {
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: #122947;
+        background-color: transparent;
+        border: 1px solid #B3BAC1;
+        border-radius: 2px;
+    }
+    .bestsellers__card:nth-child(n+2){
+        display: none;
+    }
+    .bestsellers__card {
+        position: relative;
+        width: 220px;
+        height: 297px;
+
+    }
+    .bestsellers__card__img {
+        position: relative;
+        width: 220px;
+        height: 297px;
+    }
+    .bestsellers__card__info {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        text-align: center;
+        color: #122947;
+        margin: 0px 0px 10px 0px;
+    }
+    .card__subtitle {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 145%;
+        text-align: center;
+        color: #9A9DA0;
+        margin: 0px 0px 15px 0px;
+    }
+    .card__link__more {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 145%;
+        text-align: center;
+        color: #122947;
+        padding: 0px 0px 7px 0px;
+        border-bottom: 1px solid #122947;
+    }
+    .navigation__slider {
+        display: none;
+    }
+}
+.swiper-wrapper.disabled {
+    transform: translate3d(0px, 0, 0) !important;
+}

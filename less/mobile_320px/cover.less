@@ -1,136 +1,83 @@
 .cover {
-    background-image: url("../img/cover/bg-cover-tablet.jpg");
-    width: 100vw;
-    height: 120vw;
+    padding: 106px 15px 0px 15px;
+    width: 320px;
+    height: 546px;
+    background-image: url("/img/cover/cover-bg-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50%, 50%;
-    z-index: 2;
-    position: relative;
-    overflow: hidden;
-}
-.cover__wrapper {
-    padding: 17vw 11vw;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow-x: hidden;
-    .cover__subtitle {
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.1vw;
-        line-height: 4.1vw;
-        color: #313131;
-        margin: 0px 0px 2.8vw 0px;
-        z-index: 3;
+    flex-wrap: wrap;
+    .cover__main {
+        width: 100%;
+        order: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .cover__title {
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 6.2vw;
-        line-height: 8.3vw;
-        color: #313131;
-        margin: 0px 0px 5.3vw 0px;
-        display: flex;
-        flex-wrap: wrap;
-        z-index: 3;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 49px;
+        text-align: center;
+        color: #122947;
+        margin: 0px 0px 20px 0px;
     }
-    .cover__slogan {
+    .cover__description {
+        width: 243px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #122947;
+        margin: 0px 0px 30px 0px;
+    }
+    .cover__button {
+        width: 132px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: #122947;
+        background-color: transparent;
+        border: 1px solid #B3BAC1;
+        border-radius: 2px;
+    }
+    .cover__card__left{
+        order: 1;
+
+    }
+    .cover__card__right{
+        order: 2;
+
+    }
+    .cover__card {
+        display: flex;
+        flex-direction: column;
+        width: 129px;
+        height: 190px;
+        margin: 0px 30px 0px 0px;
+    }
+    .cover__card:last-child {
+        margin: 0px;
+    }
+    .cover__card__img {
+        width: 129px;
+        height: 170px;
+        object-fit: cover;
+        margin: 0px 0px 10px 0px;
+    }
+    .card__info {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 71.2vw;
-        margin: 0px 0px 5.4vw 0px;
-        padding: 0px;
-        z-index: 3;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 140%;
+        color: #122947;
+        svg {
+            width: 23px;
+            height: 10px;
+        }
     }
-    .slogan__item:first-child {
-        list-style: none;
-    }
-    .slogan__item {
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.1vw;
-        line-height: 4.1vw;
-        color: #313131;
-        list-style-position: inside;
-        z-index: 3;
-    }
-    .search__project {
-        border: none;
-        margin: 0px 0px 3.24vw 0px;
-        padding: 3.37vw 14.67vw;
-        background: linear-gradient(90deg, #e7bd75 0%, #e29267 100%);
-        box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15);
-        border-radius: 0.6vw;
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 3vw;
-        line-height: 5vw;
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        z-index: 3;
-    }
-    .get__consultation {
-        border: none;
-        margin: 0px 0px 3.24vw 0px;
-        padding: 3.37vw 14.67vw;
-        background: rgba(255, 255, 255, 0.3);
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        box-shadow: 0px 20px 50px rgba(61, 61, 61, 0.15), inset 0px -3px 1px rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(10px);
-        border-radius: 0.6vw;
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3vw;
-        line-height: 5vw;
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #313131;
-        z-index: 3;
-    }
-    .cover__blur {
-        position: absolute;
-        width: 163.7vw;
-        height: 163.7vw;
-        left: -38.4vw;
-        top: -59.6vw;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.65);
-        filter: blur(100px);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-        z-index: 2;
-    }
-}
-.cloud__left {
-    position: absolute;
-    width: 136.3vw;
-    height: 46.6vw;
-    left: -93.3vw;
-    bottom: -22vw;
-}
-.cloud__middle {
-    display: none;
-}
-.cloud__right {
-    position: absolute;
-    width: 157.1vw;
-    height: 53.7vw;
-    right: -93.3vw;
-    bottom: -24.5vw;
-}
-.modal__catalog {
-    display: none;
-    
-}
-.circle__cover {
-    display: none;
 }

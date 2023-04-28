@@ -1,326 +1,70 @@
-.catalog__slider {
-    box-sizing: border-box;
-    width: 100vw;
-    background-color: #fff;
-    padding: 8.60vw 0px;
-    .swiper {
-        padding: 0px 0px;
+.catalog {
+    padding: 48px 98px;
+    background-color: #ffffff;
+    .catalog__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+        color: #122947;
+        margin: 0px 0px 80px 0px;
     }
-    .swiper-slide {
+    .catalog__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .catalog__card {
+        position: relative;
+        margin: 0px 25px 25px 0px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .catalog__card:hover {
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    .catalog__card:nth-child(4n) {
+        margin: 0px 0px 25px 0px;
+    }
+    .card__picture {
+        position: relative;
+        display: flex;
+        min-width: 270px;
+        min-height: 350px;
+    }
+    .card__img {
+        width: 270px;
+        height: 350px;
+        object-fit: cover;
+    }
+    picture {
+        width: 270px;
+        height: 350px;
+    }
+    .card__info {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 230px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .info__price {
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 0px 12.24vw;
     }
-    .swiper-button-next {
-        right: 5.69vw !important;
+    .card__title, .price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        color: #122947;
+        margin: 0px 0px 10px 0px;
     }
-    .swiper-button-prev {
-        left: 5.69vw !important;
-    }
-    .swiper-button-next, .swiper-button-prev {
-        width: 4.43vw;
-        height: 4.43vw;
-        border: 0.07vw solid #D9B474;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    .swiper-button-next::after, .swiper-button-prev::after {
-        color: #D9B474;
-        font-size: 0.93vw;
-        font-weight: 600;
-    }
-    .swiper-button-next:hover, .swiper-button-prev:hover {
-        border: 0.07vw solid #D97A74;
-    }
-    .swiper-button-next:hover::after, .swiper-button-prev:hover::after {
-        color: #D97A74;
-    }
-    .slide__title {
-        font-family: 'Evolventa';
-        font-style: normal;
+    .card__subtitle, .volume {
         font-weight: 400;
-        font-size: 2.38vw;
-        line-height: 3.04vw;
-        margin: 0px 0px 3.70vw 0px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #313131;
+        font-size: 13px;
+        line-height: 145%;
+        color: #9A9DA0;
     }
-    .slider__card {
-        margin: 0px;
-        padding: 0px;
-        width: 100% !important;
-        display: flex;
-        justify-content: space-between;
-    }
-    .card {
-        list-style: none;
-        box-sizing: border-box;
-        width: 23.94vw;
-        padding: 0.46vw 0.46vw 2.71vw 0.46vw;
-        margin: 0px;
-        background: #F7F3EF;
-        border-radius: 0.33vw;
-    }
-    .card__photo {
-        width: 23.02vw;
-        height: 16.87vw;
-        object-fit: cover;
-        margin: 0px 0px 1.65vw 0px;
-        cursor: zoom-in;
-    }
-    .card__info {
-        padding: 0px 2.12vw;
-    }
-    .location {
-        margin: 0px 0px 0.60vw 0px;
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.93vw;
-        line-height: 1.72vw;
-        color: #313131;
-    }
-    .info__title {
-        margin: 0px 0px 1.46vw 0px;
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.32vw;
-        line-height: 2.12vw;
-        display: flex;
-        text-transform: uppercase;
-        color: #313131;
-    }
-    .info__parameters {
-        display: flex;
-        align-items: center;
-        margin: 0px 0px 3.24vw 0px;
-    }
-    .rooms {
-        display: flex;
-        align-items: center;
-        margin: 0px 1.52vw 0px 0px;
-    }
-    .rooms__icon {
-        width: 0.99vw;
-        height: 0.73vw;
-        margin: 0px 0.53vw 0px 0px;
-    }
-    .rooms__text {
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.93vw;
-        line-height: 1.72vw;
-        color: #313131;
-    }
-    .square {
-        display: flex;
-        align-items: center;
-    }
-    .square__icon {
-        width: 0.99vw;
-        height: 0.99vw;
-        margin: 0px 0.53vw 0px 0px;
-    }
-    .square__text {
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.93vw;
-        line-height: 1.72vw;
-        color: #313131;
-    }
-    .price {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .sum {
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.46vw;
-        line-height: 1.72vw;
-        color: #313131;
-    }
-    .sum__icon {
-        color: #D9B474;
-    }
-    .price__more{
-        margin: 0px;
-        padding: 0.15vw 1.59vw 0.13vw 1.59vw;
-        background-color: transparent;
-        border: 0.07vw solid #E9C88F;
-        border-radius: 0.20vw;
-        text-align: center;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.93vw;
-        line-height: 1.72vw;
-        color: #313131;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-    .price__more:hover {
-        border: 0.07vw solid #D97A74;
-    }
-    .image__max {
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40.81vw;
-        height: 29.89vw;
-        z-index: -100;
-        cursor: zoom-out;
-    }
-    .image__max-active{
-        display: flex;
-        z-index: 120;
-
-    }
-}
-
-.modal__card__more {
-    opacity: 0;
-    box-sizing: border-box;
-    width: 55.42vw;
-    padding: 1.32vw;
-    background: #F7F3EF;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0.33vw;
-    position: absolute;
-    top: 50%;
-    left: -150%;
-    transform: translate(-50%, -50%);
-    z-index: 150;
-    transition: all 1s ease-in-out;
-    .modal__card__main {
-        display: flex;
-        justify-content: space-between;
-    }
-    .card__info {
-        margin: 0px 0px 0px 2.12vw;
-        padding: 0px;
-    }
-    .card__image_max {
-        width: 26.46vw;
-        height: 19.38vw;
-        object-fit: cover;
-    }
-    .card__title {
-        width: 20.04vw;
-        margin: 0px 0px 1.06vw 0px;
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.32vw;
-        line-height: 2.12vw;
-        text-transform: uppercase;
-        color: #313131;
-    }
-    .info__parameters {
-        margin: 0px 0px 1.06vw 0px;
-    }
-    .rooms__text {
-        margin: 0px;
-    }
-    .square__text {
-        margin: 0px;
-    }
-    .card__description {
-        margin: 1.06vw 0px 1.06vw 0px;
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.93vw;
-        line-height: 1.72vw;
-        color: #313131;
-    }
-    .modal__card__img {
-        display: flex;
-        justify-content: space-between;
-        margin: 0px 0px 1.06vw 0px;
-    }
-    .card__image_min {
-        width: 16.53vw;
-        height: 12.10vw;
-        object-fit: cover;
-        cursor: pointer;
-    }
-    .modal__card__button {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .call__me {
-        font-family: 'Evolventa';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.06vw;
-        line-height: 1.46vw;
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        padding: 0.99vw 2.31vw;
-        background: linear-gradient(90deg, #E9C88F 0%, #E9AF8F 100%);
-        box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15);
-        border-radius: 0.33vw;
-        border: none;
-        opacity: 0.8;
-        transition: all 0.3s ease-in-out;
-    }
-    .call__me:hover {
-        opacity: 1;
-    }
-    .call__me:active {
-        opacity: 1;
-    }
-    .close__modal__more {
-        padding: 0px;
-        margin: 0px;
-        width: 1.98vw;
-        height: 1.98vw;
-        border-radius: 50%;
-        border: none;
-        background: #E9C88F;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0.66vw;
-        right: 0.66vw;
-        transition: all 1s ease-in-out;
-    }
-    .line {
-        width: 1.06vw;
-        height: 2px;
-        transform: rotate(45deg);
-        background-color: #FFFFFF;
-        position: relative;
-    }
-    .line::after {
-        width: 1.06vw;
-        height: 2px;
-        transform: rotate(90deg);
-        background-color: #FFFFFF;
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-    }
-    .close__modal__more:hover {
-        transform: rotate(180deg);
-    }
-}
-.modal__card__more-active {
-    opacity: 1;
-    top: 50%;
-    left: 50%;
 }

@@ -17,7 +17,7 @@ gulp.task('mobile', function () {
   gulp.series('less',)
   var processors = [
       pxtoviewport({
-          viewportWidth: 768,
+          viewportWidth: 320,
           viewportUnit: 'vw',
           unitPrecision: 2,
       })
@@ -49,7 +49,7 @@ gulp.task('desktope', function () {
   gulp.series('less',)
   var processors = [
       pxtoviewport({
-          viewportWidth: 1512,
+          viewportWidth: 1366,
           viewportUnit: 'vw',
           unitPrecision: 2,
       })
