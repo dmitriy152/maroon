@@ -5,9 +5,11 @@
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
     .header__gamburger {
         display: none;
     }
@@ -26,6 +28,9 @@
     }
     .link__item {
         margin: 0px 35px 0px 0px;
+        padding: 0px 0px 1px 0px;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
         a {
             text-decoration: none;
             font-weight: 400;
@@ -33,6 +38,9 @@
             line-height: 24px;
             color: #122947;
         }
+    }
+    .link__item:hover {
+        border-bottom: 1px solid #122947;
     }
     .header__icon {
         display: flex;
@@ -52,4 +60,10 @@
     .icon__item:last-child{
         margin: 0px;
     }
+}
+.header-scroll {
+    background-color: #ffffff !important;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }

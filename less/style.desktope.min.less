@@ -119,14 +119,21 @@
 }
 .bestsellers .swiper-slide {
   width: 100%;
-  height: 22.84vw;
+  height: 24.16vw;
   display: flex;
 }
 .bestsellers .bestsellers__card {
   min-width: 16.84vw;
-  min-height: 22.84vw;
+  height: 22.84vw;
   position: relative;
   margin: 0px 2.2vw 0px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.bestsellers .bestsellers__card:hover {
+  -webkit-box-shadow: 0.29vw 0.29vw 0.59vw 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0.29vw 0.29vw 0.59vw 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0.29vw 0.29vw 0.59vw 0px rgba(34, 60, 80, 0.2);
 }
 .bestsellers .bestsellers__card:last-child {
   margin: 0px;
@@ -482,9 +489,11 @@
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
 }
 .header .header__gamburger {
   display: none;
@@ -504,6 +513,9 @@
 }
 .header .link__item {
   margin: 0px 2.56vw 0px 0px;
+  padding: 0px 0px 1px 0px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 .header .link__item a {
   text-decoration: none;
@@ -511,6 +523,9 @@
   font-size: 1.17vw;
   line-height: 1.76vw;
   color: #122947;
+}
+.header .link__item:hover {
+  border-bottom: 1px solid #122947;
 }
 .header .header__icon {
   display: flex;
@@ -529,6 +544,146 @@
 }
 .header .icon__item:last-child {
   margin: 0px;
+}
+.header-scroll {
+  background-color: #ffffff !important;
+  -webkit-box-shadow: 0.29vw 0.29vw 0.59vw 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0.29vw 0.29vw 0.59vw 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0.29vw 0.29vw 0.59vw 0px rgba(34, 60, 80, 0.2);
+}
+
+.modal-catalog-item {
+  position: fixed;
+  top: 55%;
+  left: -100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  padding: 1.83vw;
+  background-color: #fff;
+  z-index: -10;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.modal-catalog-item .modal-catalog-item__img {
+  width: 32.72vw;
+  height: 33.6vw;
+  object-fit: cover;
+  margin: 0px 2.93vw 0px 0px;
+}
+.modal-catalog-item .modal-catalog-item__info {
+  display: flex;
+  flex-direction: column;
+}
+.modal-catalog-item .item__title {
+  font-weight: 500;
+  font-size: 2.34vw;
+  line-height: 125%;
+  color: #122947;
+  margin: 0px 0px 1.1vw 0px;
+}
+.modal-catalog-item .item__subtitle {
+  font-weight: 400;
+  font-size: 1.17vw;
+  line-height: 145%;
+  color: #9A9DA0;
+  margin: 0px 0px 2.2vw 0px;
+}
+.modal-catalog-item .item__description {
+  width: 20.06vw;
+  font-family: 'Mplus 1p';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.17vw;
+  line-height: 145%;
+  color: #122947;
+  margin: 0px 0px 2.2vw 0px;
+}
+.modal-catalog-item .item__volume {
+  font-weight: 500;
+  font-size: 1.32vw;
+  line-height: 145%;
+  color: #122947;
+  margin: 0px 0px 3.29vw 0px;
+}
+.modal-catalog-item .item__buy {
+  display: flex;
+  align-items: center;
+}
+.modal-catalog-item .item__buy__price {
+  display: flex;
+  align-items: center;
+  margin: 0px 2.2vw 0px 0px;
+  width: 5.86vw;
+}
+.modal-catalog-item .price__value {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.9vw;
+  line-height: 145%;
+  color: #122947;
+}
+.modal-catalog-item .item__buy__btn {
+  width: 15.67vw;
+  height: 3vw;
+  font-weight: 500;
+  font-size: 1.17vw;
+  line-height: 140%;
+  color: #122947;
+  background-color: transparent;
+  border: 1px solid #B3BAC1;
+  border-radius: 0.15vw;
+  cursor: pointer;
+}
+.modal-catalog-item .modal-catalog-item__close {
+  width: 1.83vw;
+  height: 1.83vw;
+  position: absolute;
+  top: 2.2vw;
+  right: 2.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal-catalog-item .close_line {
+  width: 1.83vw;
+  height: 0.22vw;
+  transform: rotate(45deg);
+  background-color: #122947;
+  position: relative;
+}
+.modal-catalog-item .close_line::after {
+  content: '';
+  width: 1.83vw;
+  height: 0.22vw;
+  transform: rotate(90deg);
+  background-color: #122947;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.modal-catalog-item-active {
+  left: 50%;
+  z-index: 1001;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+  z-index: -10;
+}
+.overlay-active {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .subscribe {

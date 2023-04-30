@@ -1,0 +1,118 @@
+.modal-catalog-item {
+    position: fixed;
+    top: 55%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    z-index: -10;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    .modal-catalog-item__img {
+        width: 266px;
+        height: 273px;
+        object-fit: cover;
+        margin: 0px 30px 0px 0px;
+    }
+    .modal-catalog-item__info {
+        display: flex;
+        flex-direction: column;
+    }
+    .item__title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 125%;
+        color: #122947;
+        margin: 0px 0px 10px 0px;
+    }
+    .item__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 145%;
+        color: #9A9DA0;
+        margin: 0px 0px 20px 0px;
+    }
+    .item__description {
+        width: 250px;
+        font-family: 'Mplus 1p';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 145%;
+        color: #122947;
+        margin: 0px 0px 20px 0px;
+    }
+    .item__volume {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        color: #122947;
+        margin: 0px 0px 30px 0px;
+    }
+    .item__buy {
+        display: flex;
+        align-items: center;
+    }
+    .item__buy__price {
+        display: flex;
+        align-items: center;
+        margin: 0px 20px 0px 0px;
+        width: 80px;
+    }
+    .price__value {
+        display: flex;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 145%;
+        color: #122947;
+    }
+    .item__buy__btn {
+        width: 214px;
+        height: 41px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #122947;
+        background-color: transparent;
+        border: 1px solid #B3BAC1;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .modal-catalog-item__close {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .close_line {
+        width: 25px;
+        height: 3px;
+        transform: rotate(45deg);
+        background-color: #122947;
+        position: relative;
+    }
+    .close_line::after{
+        content: '';
+        width: 25px;
+        height: 3px;
+        transform: rotate(90deg);
+        background-color: #122947;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+.modal-catalog-item-active {
+    left: 50%;
+    z-index: 1001;
+    opacity: 1;
+}

@@ -4,12 +4,17 @@
     justify-content: space-between;
     background-color: transparent;
     width: 100%;
-    padding: 30px 15px;
+    padding: 40px 45px;
     position: fixed;
     top: 0px;
     left: 0px;
-    transition: background 0.3s ease-in-out;
     z-index: 1000;
+    .header__logo {
+        svg {
+            width: 131px;
+            height: 21px;
+        }
+    }
     .header__gamburger {
         display: flex;
         align-items: center;
@@ -17,31 +22,28 @@
         border: none;
         background-color: transparent;
         .line {
-            width: 22px;
+            width: 24px;
             height: 2px;
             background-color: #122947;
             position: relative;
-            transition: all 0.3s ease-in-out;
         }
         .line::after {
             content: "";
-            width: 22px;
+            width: 24px;
             height: 2px;
             background-color: #122947;
             position: absolute;
-            top: -5px;
+            top: -6px;
             left: 0px;
-            transition: all 0.3s ease-in-out;
         }
         .line::before {
             content: "";
-            width: 22px;
+            width: 24px;
             height: 2px;
             background-color: #122947;
             position: absolute;
-            bottom: -5px;
+            bottom: -6px;
             left: 0px;
-            transition: all 0.3s ease-in-out;
         }
     }
     .header__gamburger-active {
@@ -63,15 +65,15 @@
     }
     .navigation__link {
         position: fixed;
-        top: 76px;
+        top: 101px;
         left: -100%;
         width: 100%;
-        padding: 40px 15px;
+        padding: 40px 45px;
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
         transition: left 0.6s ease-in-out;
-        z-index: 1000;
+        
     }
     .link__item {
         a{
@@ -83,15 +85,12 @@
         }
         margin: 0px 0px 35px 0px;
     }
-    .link__item:last-child {
-        margin: 0px;
-    }
     .header__icon {
         display: flex;
         align-items: center;
     }
     .icon__item {
-        margin: 0px 20px 0px 0px;
+        margin: 0px 30px 0px 0px;
     }
     .icon__item:last-child{
         margin: 0px;
@@ -99,7 +98,7 @@
 }
 .header-active {
     background-color: #ffffff;
-    z-index: 1000;
+    z-index: 1010;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
